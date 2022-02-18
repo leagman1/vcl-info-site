@@ -1,0 +1,10 @@
+@font-face {
+    font-family: ROG;
+    src: url('../../fonts/ROG.ttf');
+}
+
+* {
+    box-sizing: border-box;
+
+    font-family: ROG;
+}
