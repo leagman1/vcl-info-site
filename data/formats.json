@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "name": "Standard 3v3 Control",
+        "point_limit": 300,
+        "time_limit": "10"
+    },
+    {
+        "id": 1,
+        "name": "Compromise 2v2",
+        "point_limit": 300,
+        "time_limit": 10
+    },
+    {
+        "id": 2,
+        "name": "Standard 2v2",
+        "point_limit": 250,
+        "time_limit": 10
+    }
+]

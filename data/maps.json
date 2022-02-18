@@ -1,0 +1,58 @@
+[
+    {
+        "id": 0,
+        "name": "Ocean Complex",
+        "creator": "Timenudge Studios"
+    },
+    {
+        "id": 1,
+        "name": "Rooftops",
+        "creator": "Timenudge Studios"
+    },
+    {
+        "id": 2,
+        "name": "Admari HQ",
+        "creator": "Timenudge Studios"
+    },
+    {
+        "id": 3,
+        "name": "Blood Temple",
+        "creator": "#users(rise)"
+    },
+    {
+        "id": 4,
+        "name": "Tatooine",
+        "creator": "Raven Software",
+        "portedBy": "?"
+    },
+    {
+        "id": 5,
+        "name": "Taspir",
+        "creator": "Raven Software",
+        "portedBy": "#users(Bax)"
+    },
+    {
+        "id": 6,
+        "name": "Vjun",
+        "creator": "Raven Software",
+        "portedBy": "?"
+    },
+    {
+        "id": 7,
+        "name": "Korriban Tombs",
+        "creator": "Raven Software",
+        "portedBy": "?"
+    },
+    {
+        "id": 8,
+        "name": "Rift",
+        "creator": "Raven Software",
+        "portedBy": "?"
+    },
+    {
+        "id": 9,
+        "name": "Bespin Streets",
+        "creator": "Raven Software",
+        "portedBy": "?"
+    }
+]
