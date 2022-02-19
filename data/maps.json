@@ -17,42 +17,48 @@
     {
         "id": 3,
         "name": "Blood Temple",
-        "creator": "#users(rise)"
+        "creator": 38,
+        "source": "https://vertex.mod.io/blood-temple"
     },
     {
         "id": 4,
-        "name": "Tatooine",
+        "name": "Tatooine City",
         "creator": "Raven Software",
-        "portedBy": "?"
+        "portedBy": 32,
+        "source": "https://vertex.mod.io/?filter=t&kw=jk+map+pack&tag%5B%5D=Map"
     },
     {
         "id": 5,
         "name": "Taspir",
         "creator": "Raven Software",
-        "portedBy": "#users(Bax)"
+        "portedBy": 32,
+        "source": "https://vertex.mod.io/?filter=t&kw=taspir&tag%5B%5D=Map"
     },
     {
         "id": 6,
-        "name": "Vjun",
+        "name": "Vjun Sentinel",
         "creator": "Raven Software",
-        "portedBy": "?"
+        "portedBy": 32,
+        "source": "https://vertex.mod.io/?filter=t&kw=vjun&tag%5B%5D=Map"
     },
     {
         "id": 7,
         "name": "Korriban Tombs",
         "creator": "Raven Software",
-        "portedBy": "?"
+        "portedBy": 32,
+        "source": "https://vertex.mod.io/?filter=t&kw=jk+map+pack&tag%5B%5D=Map"
     },
     {
         "id": 8,
         "name": "Rift",
         "creator": "Raven Software",
-        "portedBy": "?"
+        "portedBy": 32,
+        "source": "https://vertex.mod.io/?filter=t&kw=rift&tag%5B%5D=Map"
     },
     {
         "id": 9,
         "name": "Bespin Streets",
         "creator": "Raven Software",
-        "portedBy": "?"
+        "portedBy": 32
     }
 ]
