@@ -1,0 +1,61 @@
+body {
+    background-color: var(--bg-color-light);
+}
+
+.banner {
+    height: 11vh;
+
+    background-color: var(--bg-color);
+    box-shadow: 3px 5px 15px var(--bg-color);
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 6fr 2fr;
+}
+
+.content {
+    margin-top: 2vh;
+    height: 87vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+/* --- */
+
+.banner > * {
+    /* border: 1px solid red; */
+}
+
+.banner-logo {
+    align-self: center;
+    padding-left: 1.75rem;
+}
+
+.banner-logo img {
+    width: 4.5rem;
+}
+
+.banner-title {
+    color: var(--main-color);
+    font-size: 1.75rem;
+
+    place-self: center;
+}
+
+.banner-nav {
+    color: var(--font-main-color);
+    font-size: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-season {
+    padding-inline: 20px;
+}

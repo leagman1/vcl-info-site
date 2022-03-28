@@ -1,0 +1,19 @@
+doctype html 
+html 
+    head 
+        title Vertex League
+        meta(charset="utf-8")
+        block stylesheets 
+            link(rel="stylesheet" href="css/shared.css")
+            link(rel="stylesheet" href="css/base.css")
+    body 
+        .banner 
+            .banner-logo
+                img(src="img/vl-logo.png")
+            .banner-title VERTEX LEAGUE
+            .banner-nav 
+                each season in seasons 
+                    .nav-season= "Season " + season.id
+            .banner-spacer
+        .content 
+            block content

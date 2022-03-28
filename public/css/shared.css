@@ -7,13 +7,59 @@
 }
 
 :root {
-    --main-color: gold;
-    --bg-color: x;
-    --bg-color-light: x;
+    --main-color: #FFC016;
+    --secondary-color: #2A4440;
+    --bg-color: #191919;
+    --bg-color-light: #2D2D2D;
+    --font-main-color: rgba(255,255,255,0.8);
 }
 
 * {
     box-sizing: border-box;
 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
     font-family: xirod;
+}
+
+
+/* panel definitions */
+.panel {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 1fr;
+    place-content: center;
+
+    max-width: 95%;
+    min-width: 45%;
+    height: 90%;
+    margin-bottom: .5rem;
+
+    box-shadow: 5px 7.5px 10px var(--bg-color);
+
+    color: var(--font-main-color);
+    font-size: 1.25rem;
+}
+
+.panel-head {
+    background-color: var(--bg-color);
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: start;
+    align-items: center;
+
+    padding-left: 1rem;
+}
+
+.panel-body {
+    background-color: var(--secondary-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
