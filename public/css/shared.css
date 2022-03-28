@@ -1,0 +1,19 @@
+@font-face {
+    font-family: ROG;
+    src: url('../fonts/ROG.ttf');
+
+    font-family: xirod;
+    src: url('../fonts/xirod.ttf');
+}
+
+:root {
+    --main-color: gold;
+    --bg-color: x;
+    --bg-color-light: x;
+}
+
+* {
+    box-sizing: border-box;
+
+    font-family: xirod;
+}
