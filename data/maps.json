@@ -2,22 +2,26 @@
     {
         "id": 0,
         "name": "Ocean Complex",
-        "creator": "Timenudge Studios"
+        "creator": "Timenudge Studios",
+        "image": ""
     },
     {
         "id": 1,
         "name": "Rooftops",
-        "creator": "Timenudge Studios"
+        "creator": "Timenudge Studios",
+        "image": ""
     },
     {
         "id": 2,
         "name": "Admari HQ",
-        "creator": "Timenudge Studios"
+        "creator": "Timenudge Studios",
+        "image": ""
     },
     {
         "id": 3,
         "name": "Blood Temple",
         "creator": 38,
+        "image": "blood_temple.PNG",
         "source": "https://vertex.mod.io/blood-temple"
     },
     {
@@ -25,6 +29,7 @@
         "name": "Tatooine City",
         "creator": "Raven Software",
         "portedBy": 32,
+        "image": "jka_map_pack.png",
         "source": "https://vertex.mod.io/?filter=t&kw=jk+map+pack&tag%5B%5D=Map"
     },
     {
@@ -32,6 +37,7 @@
         "name": "Taspir",
         "creator": "Raven Software",
         "portedBy": 32,
+        "image": "taspir_ffa5.png",
         "source": "https://vertex.mod.io/?filter=t&kw=taspir&tag%5B%5D=Map"
     },
     {
@@ -39,6 +45,7 @@
         "name": "Vjun Sentinel",
         "creator": "Raven Software",
         "portedBy": 32,
+        "image": "vjun.png",
         "source": "https://vertex.mod.io/?filter=t&kw=vjun&tag%5B%5D=Map"
     },
     {
@@ -46,6 +53,7 @@
         "name": "Korriban Tombs",
         "creator": "Raven Software",
         "portedBy": 32,
+        "image": "jka_map_pack.png",
         "source": "https://vertex.mod.io/?filter=t&kw=jk+map+pack&tag%5B%5D=Map"
     },
     {
@@ -53,11 +61,13 @@
         "name": "Rift",
         "creator": "Raven Software",
         "portedBy": 32,
+        "image": "rift_ffa4.png",
         "source": "https://vertex.mod.io/?filter=t&kw=rift&tag%5B%5D=Map"
     },
     {
         "id": 9,
         "name": "Bespin Streets",
-        "creator": "Raven Software"
+        "creator": "Raven Software",
+        "image": ""
     }
 ]

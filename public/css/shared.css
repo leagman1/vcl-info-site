@@ -8,11 +8,18 @@
 
 :root {
     --main-color: #FFC016;
+    --main-color-light: #FFDE86;
+
     --secondary-color: #2A4440;
+    --secondary-color-light: #3B605B;
+
     --bg-color: #191919;
     --bg-color-light: #2D2D2D;
+
     --font-main-color: rgba(255,255,255,0.8);
 }
+
+/* some general styling */
 
 * {
     box-sizing: border-box;
@@ -23,6 +30,13 @@
     margin-right: 0px;
 
     font-family: xirod;
+
+    user-select: none;
+}
+
+a {
+    color: var(--font-main-color);
+    text-decoration: none;
 }
 
 
@@ -41,7 +55,7 @@
     box-shadow: 5px 7.5px 10px var(--bg-color);
 
     color: var(--font-main-color);
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .panel-head {
@@ -53,13 +67,17 @@
     justify-content: start;
     align-items: center;
 
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 .panel-body {
     background-color: var(--secondary-color);
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.invis {
+    opacity: 0;
 }

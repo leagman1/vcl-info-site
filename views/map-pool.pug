@@ -1,0 +1,22 @@
+extends base 
+
+append stylesheets 
+    link(rel="stylesheet" href="css/map-pool.css")
+
+block content 
+    .panel 
+        .panel-head Map Pool
+        .panel-body
+            .map-pool-grid
+                each map in mapPool 
+                    - 
+                        var title = "Created by: " + map.creator;
+                        if(map.portedBy){
+                            title += "\nPorted by: " + map.portedBy;
+                        }
+                    a.map-item(href=map.source target="_blank" title=title)
+                        if map.image
+                            img.map-item-image(src="img/maps/" + map.image)
+                        else 
+                            img.map-item-image(src="img/maps/placeholder.jpg")
+                        .map-item-title= map.name

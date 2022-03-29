@@ -1,0 +1,11 @@
+extends base 
+
+append stylesheets 
+    //- fill
+
+block content 
+    .panel 
+        .panel-head Error
+        .panel-body
+            p Something went wrong. Please try again or contact deez nuts.
+            p= "Error Message: " + error

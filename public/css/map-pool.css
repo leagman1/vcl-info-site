@@ -1,4 +1,45 @@
 .map-pool-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 12.5rem;
+
+    grid-gap: 35px;
+}
+
+.map-item {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    grid-template-columns: 1fr;
+
+    border: 1px solid var(--bg-color-light);
+    box-shadow: 2.5px 5px 5px var(--bg-color);
+
+    user-select: none;
+}
+
+.map-item:hover {
+    box-shadow: 2.5px 5px 5px var(--bg-color-light);
+}
+
+.map-item-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.map-item-title {
+    color: var(--main-font-color);
+    background-color: var(--bg-color-light);
+
+    display: grid;
+    align-content: center;
+
+    padding-top: .5rem;
+    padding-left: 1.5rem;
+
+    font-size: .75rem;
+}
+
+.map-item-link {
+    cursor: pointer;
 }

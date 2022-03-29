@@ -18,6 +18,7 @@
   "homepage": "https://github.com/leagman1/vcl-info-site#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "serve-favicon": "^2.5.0"
   }
 }

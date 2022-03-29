@@ -6,6 +6,8 @@ html
         block stylesheets 
             link(rel="stylesheet" href="css/shared.css")
             link(rel="stylesheet" href="css/base.css")
+        block scripts 
+            script(type="text/javascript" src="js/base.js")
     body 
         .banner 
             .banner-logo
@@ -13,7 +15,23 @@ html
             .banner-title VERTEX LEAGUE
             .banner-nav 
                 each season in seasons 
-                    .nav-season= "Season " + season.id
+                    if (season == currentSeason)
+                        a.nav-season.nav-season-active(href="/overview?season="+(season.id + 1) data-season-number=(season.id + 1))= "Season " + (season.id + 1)
+                    else 
+                        a.nav-season(href="/overview?season="+(season.id + 1) data-season-number=(season.id + 1))= "Season " + (season.id + 1)
             .banner-spacer
+        .banner-dropdown-container
+            .invis
+            .invis
+            .banner-dropdowns
+                each season in seasons 
+                    .season-menu(id="dropdown-menu-season-" + (season.id + 1) data-season-number=(season.id + 1))
+                        a.season-menu-item(href="/overview?season=" + (season.id + 1)) Overview
+                        a.season-menu-item(href="/matches?season=" + (season.id + 1)) Matches
+                        a.season-menu-item(href="/teams?season=" + (season.id + 1)) Teams 
+                        a.season-menu-item(href="/map-pool?season=" + (season.id + 1)) Map Pool
+                        a.season-menu-item(href="/rules?season=" + (season.id + 1)) Rules
+            .invis
+
         .content 
             block content
