@@ -1,0 +1,2238 @@
+{
+	"ServerID": "1647637408",
+	"MatchID": "1647637730",
+	"Players": [
+		{
+			"user": "1007000050",
+			"DisplayName": "Guglimugli",
+			"GroundTime": 266.86929321289062,
+			"GroundDistance": 1341.721435546875,
+			"AirTime": 283.5892333984375,
+			"AirDistance": 3361.51171875,
+			"ClashCount": 25,
+			"ClashesWon": 13,
+			"ClashesLost": 11,
+			"ClashesTied": 1,
+			"BlockCount": 0,
+			"BlocksWon": 0,
+			"BlocksBroken": 0,
+			"StanceChangeCount": 94,
+			"SwingCancelCount": 0,
+			"SwingCount": 209,
+			"SwingHits": 49,
+			"DamageGiven": 1225,
+			"DamageReceived": 788,
+			"Kills": 7,
+			"Deaths": 7,
+			"Assists": 21,
+			"EnvironmentDeaths": 0,
+			"WallRunCount": 13,
+			"WallRunTime": 3.2009999752044678,
+			"JumpCount": 182,
+			"DoubleJumpCount": 2,
+			"DoubleFlipCount": 8,
+			"DodgeCount": 16,
+			"TeamKills": 0,
+			"TeamDeaths": 0,
+			"TeamDamageGiven": 109,
+			"TeamDamageReceived": 118,
+			"RollCount": 4,
+			"DodgeFlipCount": 0,
+			"BackFlipCount": 13,
+			"CrouchTime": 2.5304064750671387,
+			"WalkTime": 0.1006334125995636,
+			"AirKills": 0,
+			"AirDeaths": 2,
+			"ControlPointTime": 249,
+			"ControlPointKills": 0,
+			"ControlPointTeamKills": 0,
+			"ControlPointTeamDeaths": 0,
+			"WeaponFrequency": [
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 47,
+					"WeaponSwingCount": 209,
+					"WeaponUsageTime": 539,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 18,
+							"SwingDirectionHitCount": 3
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 3,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 2,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 40,
+							"SwingDirectionHitCount": 8
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 6,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 8,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 4,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 128,
+							"SwingDirectionHitCount": 35
+						}
+					]
+				},
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 47,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"user": "8e3585dc7e6020cd398711971bfb375a",
+			"DisplayName": "leagman1",
+			"GroundTime": 323.34368896484375,
+			"GroundDistance": 1354.078857421875,
+			"AirTime": 219.13311767578125,
+			"AirDistance": 2711.385498046875,
+			"ClashCount": 30,
+			"ClashesWon": 17,
+			"ClashesLost": 12,
+			"ClashesTied": 1,
+			"BlockCount": 0,
+			"BlocksWon": 0,
+			"BlocksBroken": 0,
+			"StanceChangeCount": 16,
+			"SwingCancelCount": 0,
+			"SwingCount": 159,
+			"SwingHits": 33,
+			"DamageGiven": 831,
+			"DamageReceived": 1217,
+			"Kills": 5,
+			"Deaths": 8,
+			"Assists": 17,
+			"EnvironmentDeaths": 0,
+			"WallRunCount": 12,
+			"WallRunTime": 3.1800003051757812,
+			"JumpCount": 134,
+			"DoubleJumpCount": 1,
+			"DoubleFlipCount": 3,
+			"DodgeCount": 12,
+			"TeamKills": 0,
+			"TeamDeaths": 2,
+			"TeamDamageGiven": 23,
+			"TeamDamageReceived": 76,
+			"RollCount": 0,
+			"DodgeFlipCount": 0,
+			"BackFlipCount": 6,
+			"CrouchTime": 1.1899652481079102,
+			"WalkTime": 1.0061419010162354,
+			"AirKills": 0,
+			"AirDeaths": 0,
+			"ControlPointTime": 283,
+			"ControlPointKills": 0,
+			"ControlPointTeamKills": 0,
+			"ControlPointTeamDeaths": 2,
+			"WeaponFrequency": [
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 8,
+					"WeaponSwingCount": 154,
+					"WeaponUsageTime": 115,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 7,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 2,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 1,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 3,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 1,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 3,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 15,
+							"SwingDirectionHitCount": 3
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 122,
+							"SwingDirectionHitCount": 25
+						}
+					]
+				},
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 8,
+					"WeaponSwingCount": 5,
+					"WeaponUsageTime": 13,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 4,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 1,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"user": "2724562cb799fc885963caf632500ad5",
+			"DisplayName": "anakrusis",
+			"GroundTime": 346.35250854492188,
+			"GroundDistance": 2136.537841796875,
+			"AirTime": 196.61962890625,
+			"AirDistance": 2332.78857421875,
+			"ClashCount": 51,
+			"ClashesWon": 28,
+			"ClashesLost": 20,
+			"ClashesTied": 3,
+			"BlockCount": 0,
+			"BlocksWon": 0,
+			"BlocksBroken": 0,
+			"StanceChangeCount": 0,
+			"SwingCancelCount": 0,
+			"SwingCount": 343,
+			"SwingHits": 64,
+			"DamageGiven": 1258,
+			"DamageReceived": 1097,
+			"Kills": 11,
+			"Deaths": 10,
+			"Assists": 14,
+			"EnvironmentDeaths": 0,
+			"WallRunCount": 6,
+			"WallRunTime": 3.1830000877380371,
+			"JumpCount": 151,
+			"DoubleJumpCount": 0,
+			"DoubleFlipCount": 2,
+			"DodgeCount": 0,
+			"TeamKills": 2,
+			"TeamDeaths": 0,
+			"TeamDamageGiven": 94,
+			"TeamDamageReceived": 78,
+			"RollCount": 0,
+			"DodgeFlipCount": 0,
+			"BackFlipCount": 5,
+			"CrouchTime": 0,
+			"WalkTime": 0,
+			"AirKills": 0,
+			"AirDeaths": 0,
+			"ControlPointTime": 297,
+			"ControlPointKills": 0,
+			"ControlPointTeamKills": 2,
+			"ControlPointTeamDeaths": 0,
+			"WeaponFrequency": [
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 343,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 1,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 3,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 3,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 7,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 1,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 144,
+							"SwingDirectionHitCount": 25
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 184,
+							"SwingDirectionHitCount": 35
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"user": "15aaad939aa28318879913d828efad66",
+			"DisplayName": "-{CoC}- K*pt'n Tatzi-Tatz",
+			"GroundTime": 303.8681640625,
+			"GroundDistance": 1734.32861328125,
+			"AirTime": 242.86100769042969,
+			"AirDistance": 2873.85546875,
+			"ClashCount": 20,
+			"ClashesWon": 5,
+			"ClashesLost": 14,
+			"ClashesTied": 1,
+			"BlockCount": 11,
+			"BlocksWon": 8,
+			"BlocksBroken": 3,
+			"StanceChangeCount": 0,
+			"SwingCancelCount": 0,
+			"SwingCount": 174,
+			"SwingHits": 28,
+			"DamageGiven": 455,
+			"DamageReceived": 878,
+			"Kills": 3,
+			"Deaths": 9,
+			"Assists": 16,
+			"EnvironmentDeaths": 0,
+			"WallRunCount": 3,
+			"WallRunTime": 1.1050000190734863,
+			"JumpCount": 149,
+			"DoubleJumpCount": 0,
+			"DoubleFlipCount": 11,
+			"DodgeCount": 14,
+			"TeamKills": 0,
+			"TeamDeaths": 0,
+			"TeamDamageGiven": 33,
+			"TeamDamageReceived": 59,
+			"RollCount": 0,
+			"DodgeFlipCount": 1,
+			"BackFlipCount": 10,
+			"CrouchTime": 0,
+			"WalkTime": 0,
+			"AirKills": 0,
+			"AirDeaths": 0,
+			"ControlPointTime": 292,
+			"ControlPointKills": 0,
+			"ControlPointTeamKills": 0,
+			"ControlPointTeamDeaths": 0,
+			"WeaponFrequency": [
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 174,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 5,
+							"SwingDirectionHitCount": 3
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 3,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 12,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 7,
+							"SwingDirectionHitCount": 2
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 1,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 15,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 21,
+							"SwingDirectionHitCount": 4
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 37,
+							"SwingDirectionHitCount": 5
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 73,
+							"SwingDirectionHitCount": 11
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"user": "602b8abaf0f41b340742f936e4aef8eb",
+			"DisplayName": "Scy",
+			"GroundTime": 291.57073974609375,
+			"GroundDistance": 1668.5062255859375,
+			"AirTime": 236.39093017578125,
+			"AirDistance": 2961.8203125,
+			"ClashCount": 70,
+			"ClashesWon": 27,
+			"ClashesLost": 42,
+			"ClashesTied": 1,
+			"BlockCount": 5,
+			"BlocksWon": 3,
+			"BlocksBroken": 2,
+			"StanceChangeCount": 0,
+			"SwingCancelCount": 0,
+			"SwingCount": 285,
+			"SwingHits": 89,
+			"DamageGiven": 1850,
+			"DamageReceived": 1519,
+			"Kills": 18,
+			"Deaths": 14,
+			"Assists": 11,
+			"EnvironmentDeaths": 0,
+			"WallRunCount": 13,
+			"WallRunTime": 4.2570004463195801,
+			"JumpCount": 176,
+			"DoubleJumpCount": 2,
+			"DoubleFlipCount": 4,
+			"DodgeCount": 10,
+			"TeamKills": 0,
+			"TeamDeaths": 0,
+			"TeamDamageGiven": 103,
+			"TeamDamageReceived": 68,
+			"RollCount": 0,
+			"DodgeFlipCount": 0,
+			"BackFlipCount": 21,
+			"CrouchTime": 0,
+			"WalkTime": 8.0773334503173828,
+			"AirKills": 0,
+			"AirDeaths": 1,
+			"ControlPointTime": 269,
+			"ControlPointKills": 0,
+			"ControlPointTeamKills": 0,
+			"ControlPointTeamDeaths": 0,
+			"WeaponFrequency": [
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 285,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 1,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 3,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 98,
+							"SwingDirectionHitCount": 27
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 8,
+							"SwingDirectionHitCount": 3
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 11,
+							"SwingDirectionHitCount": 3
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 6,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 21,
+							"SwingDirectionHitCount": 9
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 137,
+							"SwingDirectionHitCount": 46
+						}
+					]
+				}
+			]
+		},
+		{
+			"user": "1007000051",
+			"DisplayName": "c0sAx",
+			"GroundTime": 280.72210693359375,
+			"GroundDistance": 1496.4884033203125,
+			"AirTime": 258.48440551757812,
+			"AirDistance": 3047.540283203125,
+			"ClashCount": 36,
+			"ClashesWon": 18,
+			"ClashesLost": 17,
+			"ClashesTied": 1,
+			"BlockCount": 6,
+			"BlocksWon": 4,
+			"BlocksBroken": 2,
+			"StanceChangeCount": 24,
+			"SwingCancelCount": 0,
+			"SwingCount": 199,
+			"SwingHits": 50,
+			"DamageGiven": 1096,
+			"DamageReceived": 1216,
+			"Kills": 14,
+			"Deaths": 10,
+			"Assists": 14,
+			"EnvironmentDeaths": 0,
+			"WallRunCount": 11,
+			"WallRunTime": 3.7090001106262207,
+			"JumpCount": 170,
+			"DoubleJumpCount": 1,
+			"DoubleFlipCount": 9,
+			"DodgeCount": 12,
+			"TeamKills": 0,
+			"TeamDeaths": 0,
+			"TeamDamageGiven": 64,
+			"TeamDamageReceived": 27,
+			"RollCount": 0,
+			"DodgeFlipCount": 1,
+			"BackFlipCount": 8,
+			"CrouchTime": 0.73706662654876709,
+			"WalkTime": 7.6600117683410645,
+			"AirKills": 3,
+			"AirDeaths": 0,
+			"ControlPointTime": 254,
+			"ControlPointKills": 0,
+			"ControlPointTeamKills": 0,
+			"ControlPointTeamDeaths": 0,
+			"WeaponFrequency": [
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 12,
+					"WeaponSwingCount": 178,
+					"WeaponUsageTime": 175,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 9,
+							"SwingDirectionHitCount": 3
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 58,
+							"SwingDirectionHitCount": 17
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 6,
+							"SwingDirectionHitCount": 2
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 32,
+							"SwingDirectionHitCount": 9
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 4,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 4,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 65,
+							"SwingDirectionHitCount": 18
+						}
+					]
+				},
+				{
+					"WeaponType": "SINGLE",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 12,
+					"WeaponSwingCount": 21,
+					"WeaponUsageTime": 31,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 1,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 9,
+							"SwingDirectionHitCount": 1
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 11,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "STAFF",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "HEAVY",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				},
+				{
+					"WeaponType": "DUAL",
+					"WeaponStance": "MEDIUM",
+					"WeaponStanceCount": 0,
+					"WeaponSwingCount": 0,
+					"WeaponUsageTime": 0,
+					"SwingFrequency": [
+						{
+							"SwingDirection": "FORWARD",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "FORWARD (W)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER RIGHT -> LOWER LEFT (WA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "UPPER LEFT -> LOWER RIGHT (WD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "BACK (S)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER RIGHT -> UPPER LEFT (SD)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LOWER LEFT -> UPPER RIGHT (SA)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "RIGHT -> LEFT (A)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						},
+						{
+							"SwingDirection": "LEFT -> RIGHT (D)",
+							"SwingDirectionCount": 0,
+							"SwingDirectionHitCount": 0
+						}
+					]
+				}
+			]
+		}
+	]
+}

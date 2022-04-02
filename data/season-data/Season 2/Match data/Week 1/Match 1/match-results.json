@@ -1,0 +1,32 @@
+[
+    {
+        "home": {
+            "score": 300,
+            "playerStats": []
+        },
+        "away": {
+            "score": 250,
+            "playerStats": []
+        }
+    },
+    {
+        "home": {
+            "score": 276,
+            "playerStats": []
+        },
+        "away": {
+            "score": 300,
+            "playerStats": []
+        }
+    },
+    {
+        "home": {
+            "score": 290,
+            "playerStats": []
+        },
+        "away": {
+            "score": 283,
+            "playerStats": []
+        }
+    }
+]

@@ -66,12 +66,35 @@ module.exports = function buildSeasonData(seasonID){
     let scheduleFile = fs.readFileSync("data/season-data/Season " + (seasonID + 1) + "/schedule.json");
     let schedule = JSON.parse(scheduleFile);
 
-    for(let week of schedule){
-        for(let match of week){
+    schedule.forEach(function iterateOverWeeks(matches, weekIndex){
+        matches.forEach(function iterateOverMatches(match, matchIndex){
             match.home = getTeamByID(match.home, teams);
             match.away = getTeamByID(match.away, teams);
-        }
-    }
+
+            try {
+                let matchResultsFile = fs.readFileSync("data/season-data/Season " + (seasonID + 1) + "/Match data/Week " + (weekIndex + 1) + "/Match " + (matchIndex + 1) + "/match-results.json");
+                matchResults = JSON.parse(matchResultsFile);
+
+                let roundsWon = {
+                    home: 0,
+                    away: 0
+                }
+
+                matchResults.forEach(function buildMatchResults(round, index){
+                    if(round.home.score > round.away.score){
+                        roundsWon.home++;
+                    } else {
+                        roundsWon.away++;
+                    }
+                });
+
+                match.winner = roundsWon.home > roundsWon.away ? "home" : "away";
+                match.roundsWon = matchResult.roundsWon;
+            } catch (err) {
+                console.log("ERROR", err);
+            }
+        });
+    });
 
     // do other stuff, fetch winner, round score, etc.
 

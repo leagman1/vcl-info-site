@@ -10,9 +10,9 @@ html
             script(type="text/javascript" src="js/base.js")
     body 
         .banner 
-            a.banner-logo
+            a.banner-logo(href="/overview?season=1")
                 img(src="img/vl-logo.png")
-            a.banner-title VERTEX LEAGUE
+            a.banner-title(href="/overview?season=1") VERTEX LEAGUE
             .banner-nav 
                 if(seasonData)
                     -var i = 0
