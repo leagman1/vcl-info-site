@@ -1,6 +1,8 @@
 const fs = require("fs");
 
 module.exports = function buildSeasonData(seasonID){
+    seasonID = Number(seasonID);
+
     let seasonData = {};
 
     // get Season

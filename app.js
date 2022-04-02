@@ -5,7 +5,6 @@ const port = 8080;
 const path = require("path");
 const favicon = require('serve-favicon')
 
-const vclController = require("./js/controller.js");
 const getSeasonData = require("./js/seasonData.js");
 
 console.log("GETSEASON DATA", getSeasonData);
@@ -25,12 +24,13 @@ app.get('/overview', (req, res) => renderPage(req, res));
 app.get('/matches', (req, res) => renderPage(req, res));
 app.get('/teams', (req, res) => renderPage(req, res));
 app.get('/map-pool', (req, res) => renderPage(req,res));
+app.get('/rules', (req, res) => renderPage(req,res));
 
 app.get("*", (req,res) => render404(req, res));
 
 function renderPage(req, res){
   try {
-    var seasonData = getSeasonData(req.query.season - 1);
+    var seasonData = getSeasonData(req.query.season);
 
     res.render(req.path.substring(1), {
       seasonData: seasonData

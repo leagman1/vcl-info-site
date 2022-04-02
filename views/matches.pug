@@ -11,16 +11,20 @@ block content
             while i < seasonData.matchesPerWeek
                 .matches-panel-column.matches-panel-head-match-numbers= i+1 + ""
                 - i++
-        each week, i in seasonData.matches 
+        - var matchCounter = 0
+        each week, weekNumber in seasonData.matches 
             .matches-panel-row
                 .matches-panel-column.first-column
-                    .matches-panel-week-numbers= "Week " + (i+1)
-                each match in week
-                    .matches-panel-column.match-result-container 
+                    .matches-panel-week-numbers= "Week " + (weekNumber+1)
+                each match, matchNumber in week
+                    a.matches-panel-column.match-result-container(href="match?id=" + (matchCounter)) 
                         .match-result
                             .laurels
+                                img(src="img/golden-laurel.png")
                             .home= match.home.tag
                             .vs= "vs"
                             .away= match.away.tag
                             .laurels
+                                img(src="img/golden-laurel.png")
+                    - matchCounter++
                 

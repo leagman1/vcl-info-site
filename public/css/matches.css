@@ -67,10 +67,21 @@
     height: 85%;
 
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr 3fr 1fr;
+    grid-template-columns: 2fr 3fr 1fr 3fr 2fr;
     place-items: center;
 
     border: 1px solid rgba(0,0,0,0.2);
+}
+
+.match-result:hover {
+    background-color: var(--secondary-color);
+
+    box-shadow: 0px 0px 3px black;
+
+    cursor: pointer;
+
+    width: 90%;
+    height: 95%;
 }
 
 .first-column {
@@ -89,4 +100,10 @@
 
 .vs {
     font-size: .6rem;
+}
+
+.laurels > img{
+    width: 30px;
+
+    border-radius: 100px;
 }
