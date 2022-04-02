@@ -89,9 +89,9 @@ module.exports = function buildSeasonData(seasonID){
                 });
 
                 match.winner = roundsWon.home > roundsWon.away ? "home" : "away";
-                match.roundsWon = matchResult.roundsWon;
+                match.roundsWon = roundsWon;
             } catch (err) {
-                console.log("ERROR", err);
+                // console.log("ERROR", err);
             }
         });
     });

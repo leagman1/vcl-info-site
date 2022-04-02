@@ -18,8 +18,6 @@ app.get('/', (req, res) => {
   res.redirect("/overview?season=2");
 });
 
-app.get("*", (req,res) => render404(req, res));
-
 app.get('/overview', (req, res) => renderPage(req, res));
 app.get('/matches', (req, res) => renderPage(req, res));
 app.get('/teams', (req, res) => renderPage(req, res));
@@ -27,6 +25,8 @@ app.get('/map-pool', (req, res) => renderPage(req,res));
 app.get('/rules', (req, res) => renderPage(req,res));
 
 app.get("/match", (req, res) => renderMatchPage(req, res));
+
+app.get("*", (req,res) => render404(req, res));
 
 function renderPage(req, res){
   try {
@@ -54,6 +54,9 @@ function renderPage(req, res){
 function renderMatchPage(req, res){
   try {
     var seasonData = getSeasonData(req.query.season);
+
+    // build match data
+    require("./js/singleMatchData.js")(seasonData);
 
     res.render(req.path.substring(1), {
       seasonData: seasonData
