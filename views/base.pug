@@ -14,23 +14,29 @@ html
                 img(src="img/vl-logo.png")
             .banner-title VERTEX LEAGUE
             .banner-nav 
-                each season in seasons 
-                    if (season == currentSeason)
-                        a.nav-season.nav-season-active(href="/overview?season="+(season.id + 1) data-season-number=(season.id + 1))= "Season " + (season.id + 1)
-                    else 
-                        a.nav-season(href="/overview?season="+(season.id + 1) data-season-number=(season.id + 1))= "Season " + (season.id + 1)
+                if(seasonData)
+                    -var i = 0
+                    while i < seasonData.totalSeasons
+                        if (i == seasonData.selectedSeason.id)
+                            a.nav-season.nav-season-active(href="/overview?season="+(i + 1) data-season-number=(i + 1))= "Season " + (i + 1)
+                        else 
+                            a.nav-season(href="/overview?season="+(i + 1) data-season-number=(i + 1))= "Season " + (i + 1)
+                        - i++
             .banner-spacer
         .banner-dropdown-container
             .invis
             .invis
             .banner-dropdowns
-                each season in seasons 
-                    .season-menu(id="dropdown-menu-season-" + (season.id + 1) data-season-number=(season.id + 1))
-                        a.season-menu-item(href="/overview?season=" + (season.id + 1)) Overview
-                        a.season-menu-item(href="/matches?season=" + (season.id + 1)) Matches
-                        a.season-menu-item(href="/teams?season=" + (season.id + 1)) Teams 
-                        a.season-menu-item(href="/map-pool?season=" + (season.id + 1)) Map Pool
-                        a.season-menu-item(href="/rules?season=" + (season.id + 1)) Rules
+                if(seasonData)
+                    -var i = 0
+                    while i < seasonData.totalSeasons 
+                        .season-menu(id="dropdown-menu-season-" + (i + 1) data-season-number=(i + 1))
+                            a.season-menu-item(href="/overview?season=" + (i + 1)) Overview
+                            a.season-menu-item(href="/matches?season=" + (i + 1)) Matches
+                            a.season-menu-item(href="/teams?season=" + (i + 1)) Teams 
+                            a.season-menu-item(href="/map-pool?season=" + (i + 1)) Map Pool
+                            a.season-menu-item(href="/rules?season=" + (i + 1)) Rules
+                        - i++
             .invis
 
         .content 

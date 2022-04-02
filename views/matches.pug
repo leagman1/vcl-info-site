@@ -1,9 +1,26 @@
 extends base 
 
 append stylesheets 
-    //- fill
+    link(rel="stylesheet" href="css/matches.css")
 
 block content 
-    .panel 
-        .panel-head Matches
-        .panel-body
+    .matches-panel 
+        .matches-panel-row.head-row
+            .matches-panel-column.matches-panel-head-title.first-column Matches
+            - var i = 0
+            while i < seasonData.matchesPerWeek
+                .matches-panel-column.matches-panel-head-match-numbers= i+1 + ""
+                - i++
+        each week, i in seasonData.matches 
+            .matches-panel-row
+                .matches-panel-column.first-column
+                    .matches-panel-week-numbers= "Week " + (i+1)
+                each match in week
+                    .matches-panel-column.match-result-container 
+                        .match-result
+                            .laurels
+                            .home= match.home.tag
+                            .vs= "vs"
+                            .away= match.away.tag
+                            .laurels
+                

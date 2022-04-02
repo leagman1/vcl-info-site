@@ -6,6 +6,9 @@ const path = require("path");
 const favicon = require('serve-favicon')
 
 const vclController = require("./js/controller.js");
+const getSeasonData = require("./js/seasonData.js");
+
+console.log("GETSEASON DATA", getSeasonData);
 
 const fs = require("fs");
 
@@ -14,86 +17,28 @@ app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'img/favicon/favicon.ico')))
 
-app.get('/overview', (req, res) => {
-  try {
-    var currentSeason = vclController.getSeasonObject(req.query.season - 1);
-
-    res.render('overview', {
-      seasons: vclController.seasons,
-      currentSeason: currentSeason
-    },
-      function renderCallback(err, html) {
-        if(err){
-          res.send("An error occured, lel");
-        } else {
-          res.send(html);
-        }
-      }
-    );
-
-  } catch (err){
-    res.send("An error occured, lel");
-  }
+app.get('/', (req, res) => {
+  res.redirect("/overview?season=2");
 });
 
-app.get('/matches', (req, res) => {
-  try {
-    var currentSeason = vclController.getSeasonObject(req.query.season - 1);
+app.get('/overview', (req, res) => renderPage(req, res));
+app.get('/matches', (req, res) => renderPage(req, res));
+app.get('/teams', (req, res) => renderPage(req, res));
+app.get('/map-pool', (req, res) => renderPage(req,res));
 
-    res.render('matches', {
-      seasons: vclController.seasons,
-      currentSeason: currentSeason
+app.get("*", (req,res) => render404(req, res));
+
+function renderPage(req, res){
+  try {
+    var seasonData = getSeasonData(req.query.season - 1);
+
+    res.render(req.path.substring(1), {
+      seasonData: seasonData
     },
       function renderCallback(err, html) {
         if(err){
-          res.send("An error occured, lel");
-        } else {
-          res.send(html);
-        }
-      }
-    );
-
-  } catch (err){
-    res.send("An error occured, lel");
-  }
-});
-
-app.get('/teams', (req, res) => {
-  try {
-    var currentSeason = vclController.getSeasonObject(req.query.season - 1);
-
-    res.render('teams', {
-      seasons: vclController.seasons,
-      currentSeason: currentSeason
-    },
-      function renderCallback(err, html) {
-        if(err){
-          res.send("An error occured, lel");
-        } else {
-          res.send(html);
-        }
-      }
-    );
-
-  } catch (err){
-    res.send("An error occured, lel");
-  }
-});
-
-app.get('/map-pool', (req, res) => {
-  try {
-    var currentSeason = vclController.getSeasonObject(req.query.season - 1);
-    var mapPool = vclController.getMapPool(currentSeason);
-
-    res.render('map-pool', {
-      seasons: vclController.seasons,
-      currentSeason: currentSeason,
-      mapPool: mapPool
-    },
-      function renderCallback(err, html) {
-        if(err){
-          console.log("ERROR", err);
-          res.send("An error occured, lel");
+          console.log("RENDER ERROR", err);
+          res.render("error", {error: err});
         } else {
           res.send(html);
         }
@@ -102,9 +47,28 @@ app.get('/map-pool', (req, res) => {
 
   } catch (err){
     console.log("ERROR", err);
-    res.send("An error occured, lel");
+    res.render("error", {error: err});
   }
-});
+}
+
+function render404(req, res){
+  try {
+    res.render("404", {},
+      function renderCallback(err, html) {
+        if(err){
+          console.log("RENDER ERROR", err);
+          res.render("error", {error: err});
+        } else {
+          res.send(html);
+        }
+      }
+    );
+
+  } catch (err){
+    console.log("ERROR", err);
+    res.render("error", {error: err});
+  }
+}
 
 /**
  * rules

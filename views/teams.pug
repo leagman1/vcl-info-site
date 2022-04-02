@@ -1,9 +1,19 @@
 extends base 
 
 append stylesheets 
-    //- fill
+    link(rel="stylesheet" href="css/teams.css")
 
 block content 
     .panel 
         .panel-head Teams
         .panel-body
+            .teams-table
+                .teams-table-head-row
+                    .teams-table-head-cell Name
+                    .teams-table-head-cell Tag
+                    .teams-table-head-cell Players
+                each team in seasonData.teams
+                    .teams-table-row 
+                        .teams-table-cell.teams-table-team-name= team.name
+                        .teams-table-cell= team.tag
+                        .teams-table-cell.teams-table-member-list= team.members.join(" - ")

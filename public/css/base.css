@@ -3,7 +3,7 @@ body {
 }
 
 .banner {
-    height: 11vh;
+    height: 9vh;
 
     background-color: var(--bg-color);
     box-shadow: 3px 5px 15px var(--bg-color);
@@ -15,8 +15,8 @@ body {
 
 .banner-dropdown-container {
     position: absolute;
-    height: 11vh;
-    top: 11vh;
+    height: 9vh;
+    top: 9vh;
     width: 100%;
 
     background-color: var(--bg-color);
@@ -29,7 +29,7 @@ body {
 
 .content {
     margin-top: 2vh;
-    height: 87vh;
+    height: 89vh;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -44,7 +44,7 @@ body {
 }
 
 .banner-logo img {
-    width: 4.5rem;
+    width: 4rem;
 }
 
 .banner-title {

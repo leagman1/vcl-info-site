@@ -14,9 +14,11 @@
     --secondary-color-light: #3B605B;
 
     --bg-color: #191919;
+    --bg-color-medium: #252525;
     --bg-color-light: #2D2D2D;
 
     --font-main-color: rgba(255,255,255,0.8);
+    --font-dim-color: rgba(255,255,255,0.5);
 }
 
 /* some general styling */
@@ -60,6 +62,8 @@ a {
 
 .panel-head {
     background-color: var(--bg-color);
+
+    color: var(--main-color);
 
     display: grid;
     grid-template-rows: 1fr;

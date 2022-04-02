@@ -11,11 +11,15 @@ document.addEventListener("DOMContentLoaded", function initialiseBasePage(){
     for(let i = 0; i< seasonMenus.length; i++){
         seasonMenus[i].addEventListener("mouseover", () => showDropdownMenu(seasonMenus[i].dataset.seasonNumber));
         seasonMenus[i].addEventListener("mouseleave", () => hideDropdownMenu(seasonMenus[i].dataset.seasonNumber));
-    }    
+    }
+    
+    document.getElementsByClassName("banner-dropdown-container")[0].style.visibility = "hidden";
 });
 
 function showDropdownMenu(id){
     console.log("MOUSEOVER", id);
+
+    document.getElementsByClassName("banner-dropdown-container")[0].style.visibility = "visible";
 
     var dropdowns = document.getElementsByClassName("season-menu");
     for(let i = 0; i< dropdowns.length; i++){
@@ -27,6 +31,8 @@ function showDropdownMenu(id){
 
 function hideDropdownMenu(id){
     console.log("mouseleave", id);
+
+    document.getElementsByClassName("banner-dropdown-container")[0].style.visibility = "hidden";
 
     var dropdowns = document.getElementsByClassName("season-menu");
     for(let i = 0; i< dropdowns.length; i++){

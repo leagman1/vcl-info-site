@@ -8,7 +8,7 @@ block content
         .panel-head Map Pool
         .panel-body
             .map-pool-grid
-                each map in mapPool 
+                each map in seasonData.mapPool 
                     - 
                         var title = "Created by: " + map.creator;
                         if(map.portedBy){

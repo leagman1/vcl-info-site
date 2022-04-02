@@ -1,0 +1,61 @@
+.panel-body {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+.teams-table {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.5rem;
+    grid-auto-rows: 1fr;
+
+    width: 75ch;
+    height: 100%;
+
+    font-size: .75rem;
+}
+
+.teams-table-head-row {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 5fr;
+
+    align-items: center;
+
+    padding-left: 2rem;
+
+    background-color: var(--bg-color-medium);
+    color: var(--font-dim-color);
+}
+
+.teams-table-row {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 5fr;
+
+    align-items: center;
+
+    padding-left: 2rem;
+
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+
+.teams-table-head-cell {
+    place-self: center;
+}
+
+.teams-table-cell {
+    place-self: center;
+}
+
+.teams-table-team-name {
+    width: 90%;
+}
+
+.teams-table-member-list {
+    width: 80%;
+    line-height: 1.4rem;
+}
