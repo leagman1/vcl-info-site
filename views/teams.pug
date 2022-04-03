@@ -16,4 +16,4 @@ block content
                     .teams-table-row 
                         .teams-table-cell.teams-table-team-name= team.name
                         .teams-table-cell= team.tag
-                        .teams-table-cell.teams-table-member-list= team.members.join(" - ")
+                        .teams-table-cell.teams-table-member-list= team.members.map((member) => member.name).join(" - ")

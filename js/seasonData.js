@@ -47,17 +47,17 @@ module.exports = function buildSeasonData(seasonID){
     let teamsFile = fs.readFileSync("data/season-data/Season " + (seasonID + 1) + "/teams.json");
     let teams = JSON.parse(teamsFile);
 
-    // resolve player names
+    // resolve players
     for(let team of teams){
         let members = [];
 
         for(let player of team.members){
-            members.push(getPlayerNameByID(player, players));
+            members.push(getPlayerByID(player, players));
         }
 
         team.members = members;
-        team.captain = getPlayerNameByID(team.captain, players);
-        team.secondInCommand = getPlayerNameByID(team.secondInCommand, players);
+        team.captain = getPlayerByID(team.captain, players);
+        team.secondInCommand = getPlayerByID(team.secondInCommand, players);
     }
 
     seasonData.teams = teams;
@@ -75,21 +75,23 @@ module.exports = function buildSeasonData(seasonID){
                 let matchResultsFile = fs.readFileSync("data/season-data/Season " + (seasonID + 1) + "/Match data/Week " + (weekIndex + 1) + "/Match " + (matchIndex + 1) + "/match-results.json");
                 matchResults = JSON.parse(matchResultsFile);
 
-                let roundsWon = {
-                    home: 0,
-                    away: 0
-                }
+                match.home.roundsWon = 0;
+                match.away.roundsWon = 0;
 
-                matchResults.forEach(function buildMatchResults(round, index){
+                matchResults.forEach(function getMatchScores(round, index){
                     if(round.home.score > round.away.score){
-                        roundsWon.home++;
+                        match.home.roundsWon++;
                     } else {
-                        roundsWon.away++;
+                        match.away.roundsWon++;
                     }
                 });
 
-                match.winner = roundsWon.home > roundsWon.away ? "home" : "away";
-                match.roundsWon = roundsWon;
+                console.log("ROUNDS WON", match.away.roundsWon);
+
+                match.home.score = matchResults.home.score;
+                match.away.score = matchResults.away.score;
+
+                match.winner = match.home.roundsWon > match.away.roundsWon ? "home" : "away";
             } catch (err) {
                 // console.log("ERROR", err);
             }

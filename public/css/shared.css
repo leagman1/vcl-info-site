@@ -9,6 +9,7 @@
 :root {
     --main-color: #FFC016;
     --main-color-light: #FFDE86;
+    --main-color-desat: #97907d;
 
     --secondary-color: #2A4440;
     --secondary-color-light: #3B605B;
@@ -16,6 +17,7 @@
     --bg-color: #191919;
     --bg-color-medium: #252525;
     --bg-color-light: #2D2D2D;
+    --bg-color-super-light: #3d3d3d;
 
     --font-main-color: rgba(255,255,255,0.8);
     --font-dim-color: rgba(255,255,255,0.5);
@@ -75,7 +77,7 @@ a {
 }
 
 .panel-body {
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color-super-light);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-right: 1.5rem;

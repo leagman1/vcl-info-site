@@ -13,7 +13,7 @@ block content
                     .week-number= "Week " + (weekNumber+1)
 
                     each match, matchNumber in week
-                        a.match-item(href="match?id=" + (matchCounter)) 
+                        a.match-item(href="match?season=" + seasonData.selectedSeason.id + "&id=" + (matchCounter)) 
 
                             if(match.winner)
                                 .match-result
@@ -23,7 +23,7 @@ block content
                                         div
 
                                     .home= match.home.tag
-                                    .score= match.roundsWon.home + ":" + match.roundsWon.away
+                                    .score= match.home.roundsWon + ":" + match.away.roundsWon
                                     .away= match.away.tag
 
                                     if(match.winner == "away")

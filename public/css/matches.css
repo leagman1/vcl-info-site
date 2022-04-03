@@ -38,7 +38,7 @@
 }
 
 .match-result {
-    background-color: var(--main-color-light);
+    background-color: var(--bg-color-super-light);
 
     border: 1px solid rgba(0,0,0,0.3);
 
@@ -53,11 +53,17 @@
 }
 
 .match-result:hover {
-    background-color: var(--secondary-color-light);
+    background-color: var(--main-color);
+    color: black;
+    font-size: .8rem;
 
     box-shadow: 0px 0px 3px black;
 
     cursor: pointer;
+}
+
+.match-result:hover > img {
+    width: 25px;
 }
 
 .home {
@@ -79,7 +85,7 @@
     letter-spacing: .2rem;
 }
 
-.match-result > img{
+.match-result > img {
     justify-self: center;
     width: 15px;
 }
@@ -89,7 +95,7 @@
     display: grid;
     place-content: center;
 
-    background-color: var(--bg-color-medium);
+    background-color: var(--bg-color-super-light);
 
     width: 100%;
     height: 100%;
