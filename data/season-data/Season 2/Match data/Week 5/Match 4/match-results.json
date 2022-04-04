@@ -1,0 +1,26 @@
+[
+    {
+        "home": {
+            "score": 300
+        },
+        "away": {
+            "score": 250
+        }
+    },
+    {
+        "home": {
+            "score": 276
+        },
+        "away": {
+            "score": 300
+        }
+    },
+    {
+        "home": {
+            "score": 290
+        },
+        "away": {
+            "score": 283
+        }
+    }
+]

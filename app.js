@@ -59,7 +59,8 @@ function renderMatchPage(req, res){
     var matchData = require("./js/singleMatchData.js")(seasonData, req.query.id);
 
     res.render(req.path.substring(1), {
-      seasonData: seasonData
+      seasonData: seasonData,
+      matchData: matchData
     },
       function renderCallback(err, html) {
         if(err){

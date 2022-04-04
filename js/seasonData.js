@@ -68,8 +68,8 @@ module.exports = function buildSeasonData(seasonID){
 
     schedule.forEach(function iterateOverWeeks(matches, weekIndex){
         matches.forEach(function iterateOverMatches(match, matchIndex){
-            match.home = getTeamByID(match.home, teams);
-            match.away = getTeamByID(match.away, teams);
+            match.home = Object.create(getTeamByID(match.home, teams));
+            match.away = Object.create(getTeamByID(match.away, teams));
 
             try {
                 let matchResultsFile = fs.readFileSync("data/season-data/Season " + (seasonID + 1) + "/Match data/Week " + (weekIndex + 1) + "/Match " + (matchIndex + 1) + "/match-results.json");
@@ -85,8 +85,6 @@ module.exports = function buildSeasonData(seasonID){
                         match.away.roundsWon++;
                     }
                 });
-
-                console.log("ROUNDS WON", match.away.roundsWon);
 
                 match.home.score = matchResults.home.score;
                 match.away.score = matchResults.away.score;

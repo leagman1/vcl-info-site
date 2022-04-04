@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 module.exports = function buildMatchData(seasonData, matchID){
-    var weekID = parseInt(matchID / (seasonData.matches.length));
+    var weekID = parseInt(matchID / (seasonData.matchesPerWeek));
     var matchID = matchID % seasonData.matches[0].length;
 
     var pathString = "./data/season-data/Season " +
@@ -9,65 +9,107 @@ module.exports = function buildMatchData(seasonData, matchID){
         "/Match data/Week " + (weekID + 1) +
         "/Match " + (matchID + 1);
 
-    // find MATCH_STATS_CONTROL_... file
-    fs.readdir(pathString, function (err, files) {
-        if(err) {
-            console.log("ERROR", err);
-            return;
+    var match;
+    
+    var files = fs.readdirSync(pathString);
+
+    var statFileObjects = [];
+
+    files.forEach(function (file) {
+        if(file.indexOf("MATCH_STATS_CONTROL") != -1){
+            var dateTime = file.split("_")[4];
+            var dateTime = dateTime.replace("-", ".").split(".");
+            dateTime.pop(); // remove ".json"
+
+            var dateTime = new Date(...dateTime);
+
+            statFileObjects.push({file: file, timestamp: dateTime.valueOf()});
         }
-
-        var statFileObjects = [];
-
-        files.forEach(function getAndSortFileName(file){
-            if(file.indexOf("MATCH_STATS_CONTROL") != -1){
-                var dateTime = file.split("_")[4];
-                var dateTime = dateTime.replace("-", ".").split(".");
-                dateTime.pop(); // remove ".json"
-
-                var dateTime = new Date(...dateTime);
-
-                statFileObjects.push({file: file, timestamp: dateTime.valueOf()});
-            }
-        });
-
-        statFileObjects.sort(function sortByDateTime(firstFile, secondFile){
-            if(firstFile.timestamp < secondFile.timestamp){
-                return -1;
-            } else {
-                return 1;
-            }
-
-            return 0; // ;-)
-        });
-
-        statFileObjects.forEach(function buildRoundStats(file, roundID){
-            let matchStatsFile = fs.readFileSync(pathString + "/" + file.file);
-            let matchStats = JSON.parse(matchStatsFile);
-
-            for(let playerStats of matchStats.Players){
-                let currentPlayerID = resolvePlayerAlias(playerStats.user);
-
-                // seasonData.matches[weekID][matchID][roundID].home.roundPlayers
-
-                for(let homePlayer of )
-            }
-
-            seasonData.matches[weekID][matchID][roundID].home.playerStats = [];
-
-            seasonData.matches[weekID][matchID][roundID].away.playerStats = [];
-        })
-
-        console.log("STAT FILES", statFiles);
     });
 
-    var selectedMatch = seasonData.matches[weekID][matchID];
+    statFileObjects.sort(function sortByDateTime(firstFile, secondFile){
+        if(firstFile.timestamp < secondFile.timestamp){
+            return -1;
+        } else {
+            return 1;
+        }
 
-    return;
+        return 0; // ;-)
+    });
+
+    let playerAliasesFile = fs.readFileSync("./data/playerAliases.json");
+    let playerAliases = JSON.parse(playerAliasesFile);
+
+    match = seasonData.matches[weekID][matchID];
+
+    let manualResults = fs.readFileSync(pathString + "/match-results.json");
+    match.roundStats = JSON.parse(manualResults);
+
+    statFileObjects.forEach(function buildPlayerStats(file, roundIndex){
+        let currentRound = match.roundStats[roundIndex];
+
+        currentRound.home.playerStats = [];
+        currentRound.away.playerStats = [];
+
+        let matchStatsFile = fs.readFileSync(pathString + "/" + file.file);
+        let matchStats = JSON.parse(matchStatsFile);
+
+        for(let playerStats of matchStats.Players){
+            let currentPlayerID = resolvePlayerAlias(playerStats.user, playerAliases);
+            playerStats.user = currentPlayerID;
+
+            let filteredPlayerStats = filterPlayersStats(playerStats);
+
+            if(isPlayerInTeam(currentPlayerID, match.home)){
+                currentRound.home.playerStats.push(filteredPlayerStats);
+            } else {
+                currentRound.away.playerStats.push(filteredPlayerStats);
+            }
+        }
+
+        currentRound.home.playerStats.sort((firstPlayer, secondPlayer) => firstPlayer.user > secondPlayer.user);
+        currentRound.away.playerStats.sort((firstPlayer, secondPlayer) => firstPlayer.user > secondPlayer.user);
+    });
+
+    return match;
 }
 
-let playerAliasesFile = fs.readFileSync("./data/playerAliases.json");
-let playerAliases = JSON.parse(playerAliasesFile);
+function resolvePlayerAlias(playerAlias, allAliases){
+    return allAliases[playerAlias] || false;
+}
 
-function resolvePlayerAlias(playerAlias){
-    return playerAliases[playerAlias] || false;
+function isPlayerInTeam(playerID, team){
+    return team.members.some((player) => player.id == playerID);
+}
+
+function filterPlayersStats(playerStats){
+    var statsToTrack = [
+        "Kills",
+        "Deaths",
+        "Assists",
+        "DamageGiven",
+        "DamageTaken"
+    ];
+
+    var readableStatsMap = {
+        "DamageGiven": "Damage Given",
+        "DamageTaken": "Damage Taken"
+    };
+
+    var filteredStats = {
+
+    };
+
+    for(let stat in playerStats){
+        if(statsToTrack.indexOf(stat) != -1){
+            filteredStats[stat] = {
+                value: playerStats[stat],
+                statDisplayName: readableStatsMap[stat] || stat
+            };
+        }
+    }
+
+    filteredStats.playerName = playerStats.DisplayName;
+
+    return filteredStats;
 }
