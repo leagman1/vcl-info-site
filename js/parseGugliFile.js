@@ -1,7 +1,7 @@
 const fs = require("fs");
 
-module.exports = function parseGugliFile(gugliFileName){
-    var csv = fs.readFileSync(gugliFileName);
+module.exports = function parseGugliFile(path, gugliFileName){
+    var csv = fs.readFileSync(path + "/" + gugliFileName);
 
     var data = csv.toString().split("\r\n");
     data.pop();

@@ -5,22 +5,26 @@ append stylesheets
 
 block content 
     -
-        var home = matchData.home
-        var away = matchData.away
-        var roundStats = matchData.roundStats
+        if(matchData){
+            var home = matchData.home
+            var away = matchData.away
+            var roundStats = matchData.roundStats
+        }
     .panel 
         .panel-head
             .panel-title Match
             .overall-result= home.name + " " + home.roundsWon + ":" + away.roundsWon + " " + away.name
         .panel-body
-            .test
-                .team= "TEAM"
-                .name= "NAME"
-                .kda= "KDA"
-            each round in roundStats
-                each player in round.home.playerStats 
-                    .test
-                        .team= home.tag
-                        .name= player.playerName
-                        .kda= player.Kills.value + ":" + player.Deaths.value + ":" + player.Assists.value
-
+            if(matchData)
+                .test
+                    .team= "TEAM"
+                    .name= "NAME"
+                    .kda= "KDA"
+                each round in roundStats
+                    each player in round.home.playerStats 
+                        .test
+                            .team= home.tag
+                            .name= player.playerName
+                            .kda= player.Kills.value + ":" + player.Deaths.value + ":" + player.Assists.value
+            else 
+                .test Naught

@@ -1,21 +1,10 @@
 const fs = require("fs");
+const util = require("./util");
 
-module.exports = function buildMatchData(seasonData, matchID){
-    var weekID = parseInt(matchID / (seasonData.matchesPerWeek));
-    var matchID = matchID % seasonData.matches[0].length;
-
-    var pathString = "./data/season-data/Season " +
-        (seasonData.selectedSeason.id + 1) +
-        "/Match data/Week " + (weekID + 1) +
-        "/Match " + (matchID + 1);
-
-    var match;
-    
-    var files = fs.readdirSync(pathString);
-
+module.exports = function parseMATCH_STATS_files(path, matchFiles, match){
     var statFileObjects = [];
 
-    files.forEach(function (file) {
+    matchFiles.forEach(function(file) {
         if(file.indexOf("MATCH_STATS_CONTROL") != -1){
             var dateTime = file.split("_")[4];
             var dateTime = dateTime.replace("-", ".").split(".");
@@ -40,9 +29,7 @@ module.exports = function buildMatchData(seasonData, matchID){
     let playerAliasesFile = fs.readFileSync("./data/playerAliases.json");
     let playerAliases = JSON.parse(playerAliasesFile);
 
-    match = seasonData.matches[weekID][matchID];
-
-    let manualResults = fs.readFileSync(pathString + "/match-results.json");
+    let manualResults = fs.readFileSync(path + "/match-results.json");
     match.roundStats = JSON.parse(manualResults);
 
     statFileObjects.forEach(function buildPlayerStats(file, roundIndex){
@@ -51,16 +38,16 @@ module.exports = function buildMatchData(seasonData, matchID){
         currentRound.home.playerStats = [];
         currentRound.away.playerStats = [];
 
-        let matchStatsFile = fs.readFileSync(pathString + "/" + file.file);
+        let matchStatsFile = fs.readFileSync(path + "/" + file.file);
         let matchStats = JSON.parse(matchStatsFile);
 
         for(let playerStats of matchStats.Players){
-            let currentPlayerID = resolvePlayerAlias(playerStats.user, playerAliases);
+            let currentPlayerID = util.resolvePlayerAlias(playerStats.user, playerAliases);
             playerStats.user = currentPlayerID;
 
             let filteredPlayerStats = filterPlayersStats(playerStats);
 
-            if(isPlayerInTeam(currentPlayerID, match.home)){
+            if(util.isPlayerInTeam(currentPlayerID, match.home)){
                 currentRound.home.playerStats.push(filteredPlayerStats);
             } else {
                 currentRound.away.playerStats.push(filteredPlayerStats);
@@ -70,16 +57,6 @@ module.exports = function buildMatchData(seasonData, matchID){
         currentRound.home.playerStats.sort((firstPlayer, secondPlayer) => firstPlayer.user > secondPlayer.user);
         currentRound.away.playerStats.sort((firstPlayer, secondPlayer) => firstPlayer.user > secondPlayer.user);
     });
-
-    return match;
-}
-
-function resolvePlayerAlias(playerAlias, allAliases){
-    return allAliases[playerAlias] || false;
-}
-
-function isPlayerInTeam(playerID, team){
-    return team.members.some((player) => player.id == playerID);
 }
 
 function filterPlayersStats(playerStats){

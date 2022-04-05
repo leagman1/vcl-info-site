@@ -1,4 +1,5 @@
 const fs = require("fs");
+const util = require("./util");
 
 module.exports = function buildSeasonData(seasonID){
     seasonID = Number(seasonID);
@@ -31,11 +32,11 @@ module.exports = function buildSeasonData(seasonID){
 
     mapPool = mapPool.map(function resolvePlayerIDs(map){
         if(typeof map.creator == "number"){
-            map.creator = getPlayerNameByID(map.creator, players);
+            map.creator = util.getPlayerNameByID(map.creator, players);
         }
 
         if(typeof map.portedBy == "number"){
-            map.portedBy = getPlayerNameByID(map.portedBy, players);
+            map.portedBy = util.getPlayerNameByID(map.portedBy, players);
         }
 
         return map;
@@ -52,12 +53,12 @@ module.exports = function buildSeasonData(seasonID){
         let members = [];
 
         for(let player of team.members){
-            members.push(getPlayerByID(player, players));
+            members.push(util.getPlayerByID(player, players));
         }
 
         team.members = members;
-        team.captain = getPlayerByID(team.captain, players);
-        team.secondInCommand = getPlayerByID(team.secondInCommand, players);
+        team.captain = util.getPlayerByID(team.captain, players);
+        team.secondInCommand = util.getPlayerByID(team.secondInCommand, players);
     }
 
     seasonData.teams = teams;
@@ -68,8 +69,8 @@ module.exports = function buildSeasonData(seasonID){
 
     schedule.forEach(function iterateOverWeeks(matches, weekIndex){
         matches.forEach(function iterateOverMatches(match, matchIndex){
-            match.home = Object.create(getTeamByID(match.home, teams));
-            match.away = Object.create(getTeamByID(match.away, teams));
+            match.home = Object.create(util.getTeamByID(match.home, teams));
+            match.away = Object.create(util.getTeamByID(match.away, teams));
 
             try {
                 let matchResultsFile = fs.readFileSync("data/season-data/Season " + (seasonID + 1) + "/Match data/Week " + (weekIndex + 1) + "/Match " + (matchIndex + 1) + "/match-results.json");
@@ -103,54 +104,3 @@ module.exports = function buildSeasonData(seasonID){
 
     return seasonData;
 }
-
-function getPlayerByID(playerID, players){
-    for(let player of players){
-        if(player.id == playerID){
-            return player;
-        }
-    }
-
-    return false;
-}
-
-function getPlayerNameByID(playerID, players){
-    for(let player of players){
-        if(player.id == playerID){
-            return player.name;
-        }
-    }
-
-    return false;
-}
-
-function getTeamByID(teamID, teams){
-    for(let team of teams){
-        if(team.id == teamID){
-            return team;
-        }
-    }
-
-    return false;
-}
-
-function getTeamNameByID(teamID, teams){
-    for(let team of teams){
-        if(team.id == teamID){
-            return team.name;
-        }
-    }
-
-    return false;
-}
-
-/* one team
-{
-    "id": 1,
-    "name": "Team Random",
-    "tag": "{RGC}",
-    "members": [6, 7, 8, 9],
-    "captain": 6,
-    "secondInCommand": -1
-}
-*/

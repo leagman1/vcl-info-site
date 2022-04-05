@@ -56,7 +56,7 @@ function renderMatchPage(req, res){
     var seasonData = getSeasonData(req.query.season);
 
     // get match data
-    var matchData = require("./js/singleMatchData.js")(seasonData, req.query.id);
+    var matchData = require("./js/matchData.js")(seasonData, req.query.id);
 
     res.render(req.path.substring(1), {
       seasonData: seasonData,
