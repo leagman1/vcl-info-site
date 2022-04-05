@@ -5,26 +5,49 @@ append stylesheets
 
 block content 
     -
-        if(matchData){
-            var home = matchData.home
-            var away = matchData.away
-            var roundStats = matchData.roundStats
+        if(matchDataFound){
+            var roundStats = match.roundStats
         }
     .panel 
         .panel-head
             .panel-title Match
-            .overall-result= home.name + " " + home.roundsWon + ":" + away.roundsWon + " " + away.name
+            .overall-result
+                .laurels 
+                .team-name= match.home.name
+                .rounds= match.home.roundsWon
+                | :
+                .rounds= match.away.roundsWon
+                .team-name= match.away.name
+                .laurels
         .panel-body
-            if(matchData)
-                .test
-                    .team= "TEAM"
-                    .name= "NAME"
-                    .kda= "KDA"
-                each round in roundStats
-                    each player in round.home.playerStats 
-                        .test
-                            .team= home.tag
-                            .name= player.playerName
-                            .kda= player.Kills.value + ":" + player.Deaths.value + ":" + player.Assists.value
+            if(matchDataFound)
+                .match-table
+                    .match-table-head
+                        .head-cell Round
+                        .head-cell Team
+                        .head-cell Score
+                        .head-cell Player
+                        .head-cell KDA
+                        .head-cell Net Damage
+                    .match-table-body
+                        each round, i in roundStats
+                            .match-table-round
+                                .match-table-cell= i+1
+                                .team-stats
+                                    .match-table-cell= match.home.tag
+                                    .match-table-cell (score)
+                                    .player-stats
+                                        each player in round.home.playerStats 
+                                            .match-table-cell= player.playerName
+                                            .match-table-cell= (player.Kills.value || player.Kills) + ":" + (player.Deaths.value || player.Deaths) + ":" + (player.Assists.value || player.Assists)
+                                            .match-table-cell= (player.NetDamage.value || player.NetDamage)
+                                .team-stats
+                                    .match-table-cell= match.away.tag
+                                    .match-table-cell (score)
+                                    .player-stats
+                                        each player in round.away.playerStats 
+                                            .match-table-cell= player.playerName
+                                            .match-table-cell= (player.Kills.value || player.Kills) + ":" + (player.Deaths.value || player.Deaths) + ":" + (player.Assists.value || player.Assists)
+                                            .match-table-cell= (player.NetDamage.value || player.NetDamage)
             else 
                 .test Naught

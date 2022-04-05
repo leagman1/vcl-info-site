@@ -51,11 +51,11 @@ module.exports = function parseGugliFile(path, gugliFileName){
             }
 
             let awayStats = {
-                playerName: stats[7],
-                Assists: stats[8],
-                Kills: stats[9],
-                Deaths: stats[10],
-                NetDamage: stats[11]
+                playerName: stats[5],
+                Assists: stats[6],
+                Kills: stats[7],
+                Deaths: stats[8],
+                NetDamage: stats[9]
             }
 
             round.home.playerStats.push(homeStats);

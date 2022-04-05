@@ -55,12 +55,18 @@ function renderMatchPage(req, res){
   try {
     var seasonData = getSeasonData(req.query.season);
 
+    var matchID = req.query.id;
+    matchID = matchID % seasonData.matches[0].length;
+
+    var weekID = parseInt(matchID / (seasonData.matchesPerWeek));
+
     // get match data
-    var matchData = require("./js/matchData.js")(seasonData, req.query.id);
+    var matchDataFound = require("./js/matchData.js")(seasonData, matchID, weekID);
 
     res.render(req.path.substring(1), {
       seasonData: seasonData,
-      matchData: matchData
+      matchDataFound: matchDataFound,
+      match: seasonData.matches[weekID][matchID]
     },
       function renderCallback(err, html) {
         if(err){
