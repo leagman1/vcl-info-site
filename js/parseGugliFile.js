@@ -9,7 +9,7 @@ module.exports = function parseGugliFile(path, gugliFileName){
     data.pop();
     // data.filter(function removeEmptyElements(element){return !!element});
 
-    console.log("CSV", data.toString());
+    console.log("CSV.toString()", csv.toString());
 
     var gugliData = [];
 
