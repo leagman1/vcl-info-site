@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'img/favicon/favicon.ico')))
 
 app.get('/', (req, res) => {
-  res.redirect("/standings?season=2");
+  res.redirect("/standings?season=1");
 });
 
 app.get('/standings', (req, res) => renderStandingsPage(req, res));
