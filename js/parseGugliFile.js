@@ -5,7 +5,7 @@ module.exports = function parseGugliFile(path, gugliFileName){
 
     console.log("CSV", csv.toString());
 
-    var data = csv.toString().split("\r\n");
+    var data = csv.toString().split(/\r?\n/); // windows+unix
     data.pop();
     // data.filter(function removeEmptyElements(element){return !!element});
 
