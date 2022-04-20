@@ -10,9 +10,9 @@ html
             script(type="text/javascript" src="js/base.js")
     body 
         .banner 
-            a.banner-logo(href="/overview?season=1")
+            a.banner-logo(href="/standings?season=1")
                 img(src="img/vl-logo.png")
-            a.banner-title(href="/overview?season=1") VERTEX LEAGUE
+            a.banner-title(href="/standings?season=1") VERTEX LEAGUE
             .banner-nav 
                 if(seasonData)
                     -var i = 0
@@ -20,7 +20,7 @@ html
                         if (i == seasonData.selectedSeason.id)
                             a.nav-season.nav-season-active(href="/overview?season="+(i) data-season-number=(i))= "Season " + (i + 1)
                         else 
-                            a.nav-season(href="/overview?season="+(i) data-season-number=(i))= "Season " + (i + 1)
+                            a.nav-season(href="/standings?season="+(i) data-season-number=(i))= "Season " + (i + 1)
                         - i++
             .banner-spacer
         .banner-dropdown-container
@@ -31,7 +31,7 @@ html
                     -var i = 0
                     while i < seasonData.totalSeasons 
                         .season-menu(id="dropdown-menu-season-" + (i) data-season-number=(i))
-                            a.season-menu-item(href="/overview?season=" + (i)) Overview
+                            a.season-menu-item(href="/standings?season=" + (i)) Standings
                             a.season-menu-item(href="/matches?season=" + (i)) Matches
                             a.season-menu-item(href="/teams?season=" + (i)) Teams 
                             a.season-menu-item(href="/map-pool?season=" + (i)) Map Pool

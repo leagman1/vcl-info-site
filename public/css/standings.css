@@ -1,0 +1,51 @@
+.panel {
+    display: inline-block;
+    height: max-content;
+}
+
+.panel-head {
+    height: 7vh;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+
+    font-size: 7.5pt;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+th {
+    background-color: var(--bg-color-medium);
+    padding: 15px 0px;
+
+    color: var(--font-dim-color);
+    font-size: 90%;
+}
+
+td {
+    padding: 12.5px 0px;
+}
+
+.position {
+    padding-left: 15px;
+}
+
+
+.first {
+    color: var(--main-color);
+}
+
+.second {
+    color: #A9A9A9;
+}
+
+.third {
+    color: #bf8970;
+}

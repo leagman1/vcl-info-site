@@ -1,59 +1,91 @@
+.panel {
+    display: inline-block;
+    height: max-content;
+}
+
 .panel-head {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 8fr;
+
+    font-size: 1.2rem;
+
+    height: 7vh;
 }
 
 .panel-body {
-    padding: 0;
+    padding: 0px;
+    height: max-content;
 }
 
 .overall-result {
     color: var(--font-main-color);
 
     display: grid;
-    grid-template-columns: 1fr 3fr repeat(3, 1fr) 3fr 1fr;
+    grid-template: 1fr / 2fr 3fr 3fr 3fr 2fr;
 
-    font-size: .75rem;
+    font-size: .8rem;
+
+    justify-items: center;
+    justify-self: center;
 }
 
-.match-table {
-    display: grid;
+.laurels {
+    width: 20px;
+    justify-self: center;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr;
-
-    place-self: center;
+    z-index: 0;
 }
 
-.match-table-head {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+.team1 {
+    background-color: rgb(65,65,65);
+    padding: 7px 0px;
 }
 
-.match-table-round {
-    display: grid;
-
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr;
-
-    place-items: center;
+.team2 {
+    background-color: rgb(60,60,60);
+    padding: 7px 0px;
 }
 
-.team-stats {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr 3fr;
-    grid-template-rows: 1fr;
-
-    place-items: center;
+.green {
+    color: rgb(92,255, 15);
 }
 
-.player-stats {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+.red {
+    color: rgb(255, 71, 71);
 }
 
-.match-table-cell {
-    
+table {
+    font-size: 7.5pt;
+
+    width: 100%;
+    height: 100%;
+
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--bg-color-medium);
+    padding: 15px 0px;
+
+    color: var(--font-dim-color);
+    font-size: 90%;
+}
+
+.round-nr {
+    background-color: var(--bg-color-medium);
+
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.tr-round-end {
+    border-bottom: 1px solid black;
+}
+
+td {
+    text-align: center;
+
+    border: 1px solid rgba(100,100,100,0.2);
+
+    padding: 2px;
 }

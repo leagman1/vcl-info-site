@@ -1,0 +1,39 @@
+extends base 
+
+append stylesheets 
+    link(rel="stylesheet" href="css/standings.css")
+
+block content 
+    .panel 
+        .panel-head Standings
+        .panel-body
+            if(standings)
+                table 
+                    thead 
+                        tr 
+                            th.position Pos 
+                            th Team 
+                            th Wins 
+                            th Rounds won 
+                            //- th Rounds draw 
+                            th Rounds lost 
+                            th Net CS
+                    tbody
+                        each team, idx in standings 
+                            tr 
+                                td.position= idx+1
+                                if(idx == 0)
+                                    td.first= team.name 
+                                else if(idx == 1)
+                                    td.second= team.name 
+                                else if(idx == 2)
+                                    td.third= team.name 
+                                else
+                                    td= team.name 
+                                td= team.aggregates.wins 
+                                td= team.aggregates.roundsWon 
+                                //- td= team.aggregates.roundsDraw 
+                                td= team.aggregates.roundsLost 
+                                td= team.aggregates.controlScoreSelf - team.aggregates.controlScoreOpponent
+            else 
+                p Standings not found

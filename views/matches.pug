@@ -7,34 +7,44 @@ block content
     .panel 
         .panel-head Matches
         .panel-body
-            .match-panel
-                - var matchCounter = 0
-                each week, weekNumber in seasonData.matches 
-                    .week-number= "Week " + (weekNumber+1)
+            if(seasonData.matches)
+                .match-panel
+                    - var matchCounter = -1
+                    each week, weekNumber in seasonData.matches 
+                        .week-number= "Week " + (weekNumber+1)
+                        each match, matchNumber in week
+                            - matchCounter++
+                            if(match.matchDataFound)
+                                a.match-item(href="match?season=" + seasonData.selectedSeason.id + "&id=" + (matchCounter)) 
+                                        .match-result
+                                            if(match.home.roundsWon > match.away.roundsWon)
+                                                img(src="img/green-laurel.png")
+                                            else 
+                                                div
 
-                    each match, matchNumber in week
-                        a.match-item(href="match?season=" + seasonData.selectedSeason.id + "&id=" + (matchCounter)) 
+                                            if(match.home.roundsWon > match.away.roundsWon)
+                                                .home.winner= match.home.tag
+                                            else
+                                                .home= match.home.tag
 
-                            if(match.winner)
-                                .match-result
-                                    if(match.winner == "home")
-                                        img(src="img/green-laurel.png")
-                                    else 
-                                        div
+                                            .score= match.home.roundsWon + ":" + match.away.roundsWon
 
-                                    .home= match.home.tag
-                                    .score= match.home.roundsWon + ":" + match.away.roundsWon
-                                    .away= match.away.tag
+                                            if(match.away.roundsWon > match.home.roundsWon)
+                                                .home.winner= match.away.tag
+                                            else
+                                                .home= match.away.tag
 
-                                    if(match.winner == "away")
-                                        img(src="img/green-laurel.png")
-                                    else 
-                                        div
+                                            if(match.away.roundsWon > match.home.roundsWon)
+                                                img(src="img/green-laurel.png")
+                                            else 
+                                                div
                             else
-                                .match-result
-                                    img(src="img/green-laurel.png")
-                                    .home= match.home.tag
-                                    .vs= "vs"
-                                    .away= match.away.tag
-                                    img(src="img/green-laurel.png")
-                        - matchCounter++
+                                .match-item-not-yet-played
+                                    .match-not-yet-played
+                                        div
+                                        .home= match.home.tag
+                                        .vs= "vs"
+                                        .away= match.away.tag
+                                        div
+            else 
+                p No match data found

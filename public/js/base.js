@@ -41,5 +41,3 @@ function hideDropdownMenu(id){
 
     document.getElementById("dropdown-menu-season-" + id).style.visibility = "hidden";
 }
-
-console.log("HELLO WORLD!");

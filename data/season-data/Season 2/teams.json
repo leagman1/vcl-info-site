@@ -1,8 +1,8 @@
 [
     {
         "id": 0,
-        "name": "Crew of Captains",
-        "tag": "-{CoC}-",
+        "name": "Command or Conquer",
+        "tag": "CoC",
         "members": [0, 1, 2, 3, 4, 5],
         "captain": 0,
         "secondInCommand": -1
@@ -10,7 +10,7 @@
     {
         "id": 1,
         "name": "Team Random",
-        "tag": "{RGC}",
+        "tag": "RGC",
         "members": [6, 7, 8, 9],
         "captain": 6,
         "secondInCommand": -1

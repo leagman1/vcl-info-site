@@ -1,9 +1,15 @@
+.panel-head{
+    height: 7vh;
+}
+
 .map-pool-grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-auto-rows: 12.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 150px));
+    grid-template-rows: 1fr;
 
     grid-gap: 35px;
+
+    width: 50vw;
 }
 
 .map-item {

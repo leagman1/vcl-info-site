@@ -12,42 +12,68 @@ block content
         .panel-head
             .panel-title Match
             .overall-result
-                .laurels 
+                if(match.home.roundsWon > match.away.roundsWon)
+                    img(src="img/green-laurel.png").laurels.laurels-team1 
+                else 
+                    .naught
                 .team-name= match.home.name
-                .rounds= match.home.roundsWon
-                | :
-                .rounds= match.away.roundsWon
+                .rounds= match.home.roundsWon + " : " + match.away.roundsWon
                 .team-name= match.away.name
-                .laurels
+                if(match.away.roundsWon > match.home.roundsWon)
+                    img(src="img/green-laurel.png").laurels.laurels-team2
+                else 
+                    .naught
         .panel-body
             if(matchDataFound)
-                .match-table
-                    .match-table-head
-                        .head-cell Round
-                        .head-cell Team
-                        .head-cell Score
-                        .head-cell Player
-                        .head-cell KDA
-                        .head-cell Net Damage
-                    .match-table-body
+                table
+                    thead
+                        tr
+                            th Round
+                            th Team
+                            th Score
+                            th Player
+                            th K
+                            th D
+                            th A
+                            th Net Damage
+                    tbody
                         each round, i in roundStats
-                            .match-table-round
-                                .match-table-cell= i+1
-                                .team-stats
-                                    .match-table-cell= match.home.tag
-                                    .match-table-cell (score)
-                                    .player-stats
-                                        each player in round.home.playerStats 
-                                            .match-table-cell= player.playerName
-                                            .match-table-cell= (player.Kills.value || player.Kills) + ":" + (player.Deaths.value || player.Deaths) + ":" + (player.Assists.value || player.Assists)
-                                            .match-table-cell= (player.NetDamage.value || player.NetDamage)
-                                .team-stats
-                                    .match-table-cell= match.away.tag
-                                    .match-table-cell (score)
-                                    .player-stats
-                                        each player in round.away.playerStats 
-                                            .match-table-cell= player.playerName
-                                            .match-table-cell= (player.Kills.value || player.Kills) + ":" + (player.Deaths.value || player.Deaths) + ":" + (player.Assists.value || player.Assists)
-                                            .match-table-cell= (player.NetDamage.value || player.NetDamage)
+                            -
+                                if(round.home.playerStats.length == 2){
+                                    var rowSpanRound = 6;
+                                    var rowSpanTagScore = 3;
+                                } else {
+                                    var rowSpanRound = 8;
+                                    var rowSpanTagScore = 4;
+                                }
+                            tr
+                                td(rowspan=rowSpanRound).round-nr= i+1
+                                td(rowspan=rowSpanTagScore).team1= match.home.tag
+                                td(rowspan=rowSpanTagScore).team1= round.home.score
+                                each player in round.home.playerStats 
+                                    tr
+                                        td.team1= player.playerName
+                                        td.team1= (player.Kills.value || player.Kills)
+                                        td.team1= (player.Deaths.value || player.Deaths)
+                                        td.team1= (player.Assists.value || player.Assists)
+                                        - var netDamage = player.NetDamage.value || player.NetDamage
+                                        if(netDamage >= 0)
+                                            td.team1.green= "+" + (player.NetDamage.value || player.NetDamage)
+                                        else if(netDamage < 0)
+                                            td.team1.red= (player.NetDamage.value || player.NetDamage)
+                            tr
+                                td(rowspan=rowSpanTagScore).team2= match.away.tag
+                                td(rowspan=rowSpanTagScore).team2= round.away.score
+                                each player in round.away.playerStats 
+                                    tr
+                                        td.team2= player.playerName
+                                        td.team2= (player.Kills.value || player.Kills)
+                                        td.team2= (player.Deaths.value || player.Deaths)
+                                        td.team2= (player.Assists.value || player.Assists)
+                                        - var netDamage = player.NetDamage.value || player.NetDamage
+                                        if(netDamage >= 0)
+                                            td.team2.green= "+" + (player.NetDamage.value || player.NetDamage)
+                                        else if(netDamage < 0)
+                                            td.team2.red= (player.NetDamage.value || player.NetDamage)
             else 
-                .test Naught
+                .match-table Nothing here

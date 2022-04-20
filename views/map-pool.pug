@@ -8,15 +8,18 @@ block content
         .panel-head Map Pool
         .panel-body
             .map-pool-grid
-                each map in seasonData.mapPool 
-                    - 
-                        var title = "Created by: " + map.creator;
-                        if(map.portedBy){
-                            title += "\nPorted by: " + map.portedBy;
-                        }
-                    a.map-item(href=map.source target="_blank" title=title)
-                        if map.image
-                            img.map-item-image(src="img/maps/" + map.image)
-                        else 
-                            img.map-item-image(src="img/maps/placeholder.jpg")
-                        .map-item-title= map.name
+                if(seasonData.mapPool)
+                    each map in seasonData.mapPool 
+                        - 
+                            var title = "Created by: " + map.creator;
+                            if(map.portedBy){
+                                title += "\nPorted by: " + map.portedBy;
+                            }
+                        a.map-item(href=map.source target="_blank" title=title)
+                            if map.image
+                                img.map-item-image(src="img/maps/" + map.image)
+                            else 
+                                img.map-item-image(src="img/maps/placeholder.jpg")
+                            .map-item-title= map.name
+                else 
+                    div No map pool found

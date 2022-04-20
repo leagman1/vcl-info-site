@@ -7,4 +7,7 @@ block content
     .panel 
         .panel-head Rules
         .panel-body
-            p Soon (tm)
+            if(seasonData.rules)
+                p Rules go here. soon(tm)
+            else 
+                p No rule set found

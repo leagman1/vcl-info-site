@@ -25,6 +25,8 @@ body {
     display: grid;
     grid-template-rows: 89vh;
     grid-template-columns: 1fr 2fr 6fr 2fr;
+
+    z-index: 10;
 }
 
 .content {
@@ -34,7 +36,9 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    place-items: center;
+    justify-items: center;
+
+    padding-top: 25px;
 }
 
 /* --- */
@@ -52,6 +56,8 @@ body {
     font-size: 1.75rem;
 
     place-self: center;
+
+    font-family: xirod;
 }
 
 .banner-nav {
@@ -77,11 +83,11 @@ body {
 }
 
 .nav-season-active {
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color-light);
 }
 
 .nav-season:hover {
-    background-color: var(--secondary-color-light);
+    background-color: var(--bg-color-super-light);
 }
 
 .banner-dropdowns {
@@ -115,7 +121,7 @@ body {
 }
 
 .season-menu-item {
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color-light);
 
     padding-left: 2.5rem;
     padding-top: .75rem;
@@ -125,7 +131,7 @@ body {
 }
 
 .season-menu-item:hover {
-    background-color: var(--secondary-color-light);
+    background-color: var(--bg-color-super-light);
 }
 
 
