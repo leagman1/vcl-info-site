@@ -3,6 +3,8 @@ const fs = require("fs");
 module.exports = function parseGugliFile(path, gugliFileName){
     var csv = fs.readFileSync(path + "/" + gugliFileName);
 
+    console.log("CSV", csv.toString());
+
     var data = csv.toString().split("\r\n");
     data.pop();
     // data.filter(function removeEmptyElements(element){return !!element});
