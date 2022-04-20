@@ -4,22 +4,22 @@ module.exports = function parseGugliFile(path, gugliFileName){
     var csv = fs.readFileSync(path + "/" + gugliFileName);
 
     var data = csv.toString().split(/\r?\n/); // windows+unix
-    data.pop(); // there's always an empty element somehow
+    data = data.filter((e) => !!e); // sometimes there are additional newlines at the end
 
     var gugliData = [];
 
     // prepare the csv-data a bit
     for(let line of data){
-        var columns = line.split(";");
+        let columns = line.split(";");
 
-        if(columns[0] == "Match"){
+        if(columns[0].indexOf("Match") != -1){
             let result = {
                 summary: columns,
                 playerStats: []
             };
 
             gugliData.push(result);
-        } else if(columns[0] == "Name"){
+        } else if(columns[0].indexOf("Name") != -1){
             continue;
         } else {
             gugliData[gugliData.length - 1].playerStats.push(columns);

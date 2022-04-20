@@ -8,7 +8,14 @@ block content
         .panel-head Matches
         .panel-body
             if(seasonData.matches)
-                .match-panel
+                -
+                    var gridStyle = {
+                        "display": "grid",
+                        "grid-template-rows": "repeat(" + (seasonData.matches.length + 1) + ", 1fr)",
+                        "grid-template-columns": "1fr repeat(" + (seasonData.matches[0].length) + ", " + 7 / seasonData.matches[0].length + "fr)",
+                        "height": "100%"
+                        }
+                .match-panel(style=gridStyle)
                     - var matchCounter = -1
                     each week, weekNumber in seasonData.matches 
                         .week-number= "Week " + (weekNumber+1)

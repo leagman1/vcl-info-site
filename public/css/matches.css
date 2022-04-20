@@ -9,13 +9,12 @@
 
 .match-panel {
     width: 100%;
-    height: 100%;
 
     place-items: center;
 
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
-    grid-template-rows: repeat(14, 1fr);
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr; /* dummy value; actual value filled in template */
+    grid-template-rows: repeat(14, 1fr); /* dummy value; actual value filled in template */
 
     background-color: var(--bg-color-medium);
 }

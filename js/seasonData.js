@@ -79,6 +79,16 @@ module.exports = function buildSeasonData(seasonID){
             team.captain = util.getPlayerByID(team.captain, players);
             team.secondInCommand = util.getPlayerByID(team.secondInCommand, players);
         }
+        
+        teams.sort(function sortByName(team1, team2){
+            if(team1.name > team2.name){
+                return 1;
+            } else if (team1.name < team2.name) {
+                return -1;
+            } else {
+                return 0; // the team fought itself :')
+            }
+        });
 
         seasonData.teams = teams;
     }

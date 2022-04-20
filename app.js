@@ -173,17 +173,19 @@ function renderStandingsPage(req, res){
       });
     }
 
-    seasonData.teams.sort(function sortByHighestWins(team1, team2){
+    seasonData.teams.sort(function sortByWinsAndControlScore(team1, team2){
       if(team1.aggregates.wins < team2.aggregates.wins){
         return 1;
       } else if(team1.aggregates.wins > team2.aggregates.wins){
         return -1
       } else if(team1.aggregates.wins == team2.aggregates.wins){
         // if same number of wins, decide by control score
-        if(team1.aggregates.controlScoreSelf < team2.aggregates.wins){
+        if(team1.aggregates.controlScoreSelf < team2.aggregates.controlScoreSelf){
           return 1;
-        } else if(team1.aggregates.controlScoreSelf > team2.aggregates.wins){
+        } else if(team1.aggregates.controlScoreSelf > team2.aggregates.controlScoreSelf){
           return -1;
+        } else {
+          return 0; // shrug
         }
       } else {
         return 0;

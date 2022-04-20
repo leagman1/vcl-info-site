@@ -145,7 +145,7 @@
     },
     {
         "id": 36,
-        "name": "rldzu."
+        "name": "rIdzu."
     },
     {
         "id": 37,
@@ -162,5 +162,41 @@
     {
         "id": 40,
         "name": "Atlas"
+    },
+    {
+        "id": 41,
+        "name": "Revan"
+    },
+    {
+        "id": 42,
+        "name": "Blue"
+    },
+    {
+        "id": 43,
+        "name": "milkyway"
+    },
+    {
+        "id": 44,
+        "name": "Chapo"
+    },
+    {
+        "id": 45,
+        "name": "KeyVal"
+    },
+    {
+        "id": 46,
+        "name": "X-TERMINATOR"
+    },
+    {
+        "id": 47,
+        "name": "Daddywan"
+    },
+    {
+        "id": 48,
+        "name": "Schmeth"
+    },
+    {
+        "id": 49,
+        "name": "exT_"
     }
 ]
