@@ -70,6 +70,8 @@ module.exports = function parseGugliFile(path, gugliFileName){
         roundResults.push(round);
     });
 
+    console.log("Round Results", JSON.stringify(roundResults));
+
     return roundResults;
 }
 
