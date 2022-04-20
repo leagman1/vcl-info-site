@@ -100,6 +100,23 @@ function renderStandingsPage(req, res){
 
     let seasonData = getSeasonData(req.query.season);
 
+    if(!seasonData.matches || !seasonData.teams){
+      res.render(req.path.substring(1), {
+        standings: false
+      },
+        function renderCallback(err, html) {
+          if(err){
+            console.log("RENDER ERROR", err);
+            res.render("error", {error: err});
+          } else {
+            res.send(html);
+          }
+        }
+      );
+
+      return;
+    }
+
     seasonData.teams.forEach(function initialiseStandingsProperties(team, teamIndex){
       team.aggregates = {
         wins: 0,
@@ -118,7 +135,7 @@ function renderStandingsPage(req, res){
           match.home.roundsWon = 0;
           match.away.roundsWon = 0;
 
-          let matchData = getMatchData(seasonData, matchIndex, weekIndex);
+          getMatchData(seasonData, matchIndex, weekIndex); // side effecting like a pro
 
           if(match.roundStats){
             match.roundStats.forEach(function (round) {
