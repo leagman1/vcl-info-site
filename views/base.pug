@@ -18,7 +18,7 @@ html
                     -var i = 0
                     while i < seasonData.totalSeasons
                         if (i == seasonData.selectedSeason.id)
-                            a.nav-season.nav-season-active(href="/overview?season="+(i) data-season-number=(i))= "Season " + (i + 1)
+                            a.nav-season.nav-season-active(href="/standings?season="+(i) data-season-number=(i))= "Season " + (i + 1)
                         else 
                             a.nav-season(href="/standings?season="+(i) data-season-number=(i))= "Season " + (i + 1)
                         - i++
