@@ -65,8 +65,6 @@ function renderMatchPage(req, res){
   try {
     var seasonData = getSeasonData(req.query.season);
 
-    console.log("Render Match Page", JSON.stringify(seasonData));
-
     var matchID = req.query.id;
     var weekID = (matchID - (matchID % seasonData.matches[0].length)) / seasonData.matches[0].length; // parseInt(matchID / (seasonData.matches[0].length));
 
@@ -101,8 +99,6 @@ function renderStandingsPage(req, res){
     let getMatchData = require("./js/matchData.js");
 
     let seasonData = getSeasonData(req.query.season);
-
-    console.log("Render Standings Page", JSON.stringify(seasonData));
 
     if(!seasonData.matches || !seasonData.teams){
       res.render(req.path.substring(1), {

@@ -3,13 +3,8 @@ const fs = require("fs");
 module.exports = function parseGugliFile(path, gugliFileName){
     var csv = fs.readFileSync(path + "/" + gugliFileName);
 
-    console.log("CSV", csv.toString());
-
     var data = csv.toString().split(/\r?\n/); // windows+unix
-    data.pop();
-    // data.filter(function removeEmptyElements(element){return !!element});
-
-    console.log("CSV.toString()", csv.toString());
+    data.pop(); // there's always an empty element somehow
 
     var gugliData = [];
 
@@ -71,8 +66,6 @@ module.exports = function parseGugliFile(path, gugliFileName){
 
         roundResults.push(round);
     });
-
-    console.log("Round Results", JSON.stringify(roundResults));
 
     return roundResults;
 }
