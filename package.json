@@ -2,9 +2,11 @@
   "name": "vcl-info-site",
   "version": "1.0.0",
   "description": "A website for our beloved Vertex Control League.",
-  "main": "index.html",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js >> vcl_info_site.log &",
+    "stop": "pkill --signal SIG_INT vcl_info_site"
   },
   "repository": {
     "type": "git",

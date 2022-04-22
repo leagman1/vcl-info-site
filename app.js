@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const port = 80;
 
+process.title = "vcl_info_site";
+
 const path = require("path");
 const favicon = require('serve-favicon')
 
