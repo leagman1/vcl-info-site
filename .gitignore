@@ -82,4 +82,4 @@ saison2.zip
 saison1.zip
 
 # pkg builds
-.dist
+dist/
