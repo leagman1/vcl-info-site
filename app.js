@@ -7,14 +7,15 @@ process.title = "vcl_info_site";
 const path = require("path");
 const favicon = require('serve-favicon')
 
-const getSeasonData = require("./js/seasonData.js");
+const getSeasonData = require(path.join(__dirname, "js", "seasonData.js"));
 
 const fs = require("fs");
 
+app.set("views", path.join(__dirname, "views"));
 app.set('view engine', 'pug');
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(favicon(path.join(__dirname, 'public', 'img/favicon/favicon.ico')))
+app.use(favicon(path.join(__dirname, 'public', 'img', 'favicon', 'favicon.ico')))
 
 app.get('/', (req, res) => {
   res.redirect("/standings?season=1");
@@ -32,7 +33,7 @@ app.get("*", (req,res) => render404(req, res));
 
 function renderPage(req, res){
   try {
-    var getMatchData = require("./js/matchData.js");
+    var getMatchData = require(path.join(__dirname, "js", "matchData.js"));
     var seasonData = getSeasonData(req.query.season);
 
     if(seasonData.matches){
@@ -73,7 +74,7 @@ function renderMatchPage(req, res){
     matchID = matchID % seasonData.matches[0].length;
 
     // get match data
-    var matchDataFound = require("./js/matchData.js")(seasonData, matchID, weekID);
+    var matchDataFound = require(path.join(__dirname, "js", "matchData.js"))(seasonData, matchID, weekID);
 
     res.render(req.path.substring(1), {
       seasonData: seasonData,
@@ -98,7 +99,7 @@ function renderMatchPage(req, res){
 
 function renderStandingsPage(req, res){
   try {
-    let getMatchData = require("./js/matchData.js");
+    let getMatchData = require(path.join(__dirname, "js", "matchData.js"));
 
     let seasonData = getSeasonData(req.query.season);
 

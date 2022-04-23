@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A website for our beloved Vertex Control League.",
   "main": "app.js",
+  "bin": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js >> vcl_info_site.log &",
@@ -22,5 +23,11 @@
     "express": "^4.17.3",
     "pug": "^3.0.2",
     "serve-favicon": "^2.5.0"
+  },
+  "pkg":{
+    "scripts": "js/**/*",
+    "assets": ["views/**/*", "public/**/*"],
+    "targets": ["node16-linux-x64", "node16-win-x64"],
+    "outputPath": "dist"
   }
 }
