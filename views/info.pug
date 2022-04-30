@@ -1,0 +1,21 @@
+extends base
+
+block content 
+    .panel 
+        .panel-head Season info
+        .panel-body
+            if(seasonInfo)
+                h2 Game Patches 
+                each patch in seasonInfo.gamePatches
+                    -
+                        var releaseType = {
+                            "pre-alpha": "Pre-Alpha",
+                            "beta": "Beta",
+                            "live": ""
+                        }
+                        var releaseType = releaseType[patch.split(":")[0]];
+                        var patchNumber = patch.split(":")[1];
+                    p= releaseType + ": " + patchNumber
+                br
+                h2 Format 
+                p= seasonInfo.format

@@ -25,8 +25,7 @@ app.get('/standings', (req, res) => renderStandingsPage(req, res));
 app.get('/matches', (req, res) => renderPage(req, res));
 app.get('/teams', (req, res) => renderPage(req, res));
 app.get('/map-pool', (req, res) => renderPage(req,res));
-app.get('/rules', (req, res) => renderPage(req,res));
-
+app.get('/info', (req, res) => renderInfoPage(req,res));
 app.get("/match", (req, res) => renderMatchPage(req, res));
 
 app.get("*", (req,res) => render404(req, res));
@@ -91,6 +90,22 @@ function renderMatchPage(req, res){
       }
     );
 
+  } catch (err){
+    console.log("ERROR", err);
+    res.render("error", {error: err});
+  }
+}
+
+function renderInfoPage(req, res){
+  try {
+    var seasonData = getSeasonData(req.query.season);
+
+    console.log("season Info", seasonData.selectedSeason.info);
+
+    res.render(req.path.substring(1),{
+      seasonData: seasonData,
+      seasonInfo: seasonData.selectedSeason.info
+    })
   } catch (err){
     console.log("ERROR", err);
     res.render("error", {error: err});
