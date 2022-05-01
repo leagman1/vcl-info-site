@@ -9,3 +9,4 @@ Compilation is using PKG ( https://www.npmjs.com/package/pkg )
 * open terminal
 * go to project folder where package.json is
 * execute command "pkg ."
+* go to ./project_root/dist/ for compiled softwares
