@@ -1,2 +1,11 @@
 # vcl-info-site
- ye
+
+## Installation
+npm install
+
+## Compilation
+Compilation is using PKG ( https://www.npmjs.com/package/pkg )
+* npm install -g pkg
+* open terminal
+* go to project folder where package.json is
+* execute command "pkg ."
