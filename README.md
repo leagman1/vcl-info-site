@@ -28,4 +28,15 @@ Compilation is using PKG ( https://www.npmjs.com/package/pkg )
 The site does not use a proper database, but uses a number of files instead. Most of the are .json files, some of them are .csv files.
 
 There are a few files which are used throughout the site:
-- players.json -> master data on all players
+- players.json -> master data on all players in the VCL
+- season.json -> master data on all seasons
+- maps.json -> master data on all maps
+- playerAliases.json -> correlation between player alias and play entry in players.json
+
+Other files are specific to an individual season:
+- schedule.json -> match table that contains the list of _all_ matches of a season
+- teams.json -> list of teams participating in a season
+- teamAliases.json -> correlation between team alias and team entry in players.json
+
+Ontop of season-specific files, there's one "match-results.json" or "match-results.csv" per finished match in every match folder.
+"match-results.csv" are results files in the form that Guglimugli defined.
