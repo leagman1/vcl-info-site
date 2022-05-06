@@ -26,7 +26,7 @@ Compilation is using PKG ( https://www.npmjs.com/package/pkg )
 ## Information & Administration
 ### Data structure
 The site does not use a proper database, but uses a number of files instead. Most of them are .json files, some of them are .csv files.
-For in-depth file descriptions, refer to the end of this README.
+For info on the structure of an individual file, refer to the existing files.
 
 There are a few files which are used throughout the site:
 - players.json -> master data on all players in the VCL
@@ -45,11 +45,31 @@ Ontop of season-specific files, there's one "match-results.json" or "match-resul
 ### Creating a new season
 To create a new season, follow these steps:
 
-1. Create the folder structure for the season
+1. Create the folder structure for the season:
+    - Season [NUMBER, ascending from last season]
+        - Match data
+            - Week [NUMBER, according to schedule.json, starting at 1]
+                - Match [NUMBER, according to schedule, starting at 1]
+                - ..repeat Match
+            - ..repeat Week till end of schedule.json
 2. Add all necessary files:
     - teams.json
     - schedule.json
     - teamAliases.json
 3. Add a season entry to data/season.json
 
-### In-depth file descriptions
+### Adding a new player to master data
+1. Open data/players.json
+2. Search the file to make sure the player is not in the list yet
+3. Add a new entry at the bottom of the list with a new id
+
+### Adding a new map to master data
+1. Open data/maps.json
+2. Search the file to make sure the map is not in the list yet
+3. Add a new entry at the bottom of the list with the following properties:
+    "id": [NUMBER, new map ID],
+    "name": <Name of the map>,
+    "creator": "Raven Software",
+    "portedBy": 32,
+    "image": "jka_map_pack.png",
+    "source": "https://vertex.mod.io/?filter=t&kw=jk+map+pack&tag%5B%5D=Map"
