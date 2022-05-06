@@ -73,7 +73,7 @@ To create a new season, follow these steps:
     - teams.json
     - schedule.json
     - teamAliases.json
-3. Add a season entry to data/season.json
+3. Add a season entry to data/seasons.json
 
 ### Creating a schedule for a season
 A schedule consists of a nested array. The outer array represents the weeks of a season, each inner array stands for the matches of one week.
