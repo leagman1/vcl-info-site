@@ -84,8 +84,6 @@ saison1.zip
 # pkg builds
 dist/
 
-# test data
-data/
-
+# live data backup (VCL)
 backup
 backup/
