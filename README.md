@@ -78,7 +78,7 @@ To create a new season, follow these steps:
 
 ### Creating a schedule for a season
 ```json
-{"test": "test"}
+{"test": [TEST]}
 ```
 
 ### Creating a new team
