@@ -25,3 +25,7 @@ Compilation is using PKG ( https://www.npmjs.com/package/pkg )
 
 ## Administration
 ### Data structure
+The site does not use a proper database, but uses a number of files instead. Most of the are .json files, some of them are .csv files.
+
+There are a few files which are used throughout the site:
+- players.json -> master data on all players
