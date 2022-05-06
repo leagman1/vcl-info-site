@@ -86,3 +86,6 @@ dist/
 
 # test data
 data/
+
+backup
+backup/
