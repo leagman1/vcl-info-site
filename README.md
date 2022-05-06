@@ -42,6 +42,24 @@ Other files are specific to an individual season:
 Ontop of season-specific files, there's one "match-results.json" or "match-results.csv" per finished match in every match folder.
 "match-results.csv" are results files in the form that Guglimugli defined.
 
+### Adding a new player to master data
+1. Open data/players.json
+2. Search the file to make sure the player is not in the list yet
+3. Add a new entry at the bottom of the list with the following properties:
+    - "id": [Number, new player ID, unique]
+    - "name": [String]
+
+### Adding a new map to master data
+1. Open data/maps.json
+2. Search the file to make sure the map is not in the list yet
+3. Add a new entry at the bottom of the list with the following properties:
+    - "id": [Number, new map ID, unique],
+    - "name": [String],
+    - "creator": [String],
+    - "portedBy": [Number, player ID from players.json],
+    - "image": [String, filename of the thumbnail in public/img],
+    - "source": [String, URL to download location, i.e. vertex.mod.io]
+
 ### Creating a new season
 To create a new season, follow these steps:
 
@@ -58,20 +76,17 @@ To create a new season, follow these steps:
     - teamAliases.json
 3. Add a season entry to data/season.json
 
-### Adding a new player to master data
-1. Open data/players.json
-2. Search the file to make sure the player is not in the list yet
-3. Add a new entry at the bottom of the list with the following properties:
-    - "id": [Number, new player ID, unique]
-    - "name": [String]
+### Creating a schedule for a season
+```json
+{"test": "test"}
+```
 
-### Adding a new map to master data
-1. Open data/maps.json
-2. Search the file to make sure the map is not in the list yet
-3. Add a new entry at the bottom of the list with the following properties:
-    - "id": [Number, new map ID],
+### Creating a new team
+1. Open a teams.json file
+2. Add a new entry with the following properties:
+    - "id": [Number, new team ID, unique],
     - "name": [String],
-    - "creator": [String],
-    - "portedBy": [Number, play id from players.json],
-    - "image": [String, filename of the thumbnail in public/img],
-    - "source": [String, URL to download location, i.e. vertex.mod.io]
+    - "tag": [String],
+    - "members": [Array of player IDs from players.json],
+    - "captain": [Number, player ID from players.json],
+    - "secondInCommand": [Number, player ID from players.json]
