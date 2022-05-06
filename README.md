@@ -94,3 +94,8 @@ One match is represented by an object listing home and away teams referring to t
     - "members": [Array of player IDs from players.json],
     - "captain": [Number, player ID from players.json],
     - "secondInCommand": [Number, player ID from players.json]
+
+### Adding a player to a team
+1. Open a teams.json file
+2. Find the team
+3. Add a player's ID (from players.json) to the teams "members" property
