@@ -23,15 +23,16 @@ Compilation is using PKG ( https://www.npmjs.com/package/pkg )
 * execute command "pkg ."
 * go to ./project_root/dist/ for compiled softwares
 
-## Administration
+## Information & Administration
 ### Data structure
-The site does not use a proper database, but uses a number of files instead. Most of the are .json files, some of them are .csv files.
+The site does not use a proper database, but uses a number of files instead. Most of them are .json files, some of them are .csv files.
+For in-depth file descriptions, refer to the end of this README.
 
 There are a few files which are used throughout the site:
 - players.json -> master data on all players in the VCL
 - season.json -> master data on all seasons
 - maps.json -> master data on all maps
-- playerAliases.json -> correlation between player alias and play entry in players.json
+- playerAliases.json -> correlation between player alias and player entry in players.json
 
 Other files are specific to an individual season:
 - schedule.json -> match table that contains the list of _all_ matches of a season
@@ -40,3 +41,15 @@ Other files are specific to an individual season:
 
 Ontop of season-specific files, there's one "match-results.json" or "match-results.csv" per finished match in every match folder.
 "match-results.csv" are results files in the form that Guglimugli defined.
+
+### Creating a new season
+To create a new season, follow these steps:
+
+1. Create the folder structure for the season
+2. Add all necessary files:
+    - teams.json
+    - schedule.json
+    - teamAliases.json
+3. Add a season entry to data/season.json
+
+### In-depth file descriptions
