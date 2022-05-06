@@ -46,10 +46,10 @@ Ontop of season-specific files, there's one "match-results.json" or "match-resul
 To create a new season, follow these steps:
 
 1. Create the folder structure for the season:
-    - Season [NUMBER, ascending from last season]
+    - Season [Number, ascending from last season]
         - Match data
-            - Week [NUMBER, according to schedule.json, starting at 1]
-                - Match [NUMBER, according to schedule, starting at 1]
+            - Week [Number, according to schedule.json, starting at 1]
+                - Match [Number, according to schedule, starting at 1]
                 - ..repeat Match
             - ..repeat Week till end of schedule.json
 2. Add all necessary files:
@@ -61,15 +61,17 @@ To create a new season, follow these steps:
 ### Adding a new player to master data
 1. Open data/players.json
 2. Search the file to make sure the player is not in the list yet
-3. Add a new entry at the bottom of the list with a new id
+3. Add a new entry at the bottom of the list with the following properties:
+    - "id": [Number, new player ID, unique]
+    - "name": [String]
 
 ### Adding a new map to master data
 1. Open data/maps.json
 2. Search the file to make sure the map is not in the list yet
 3. Add a new entry at the bottom of the list with the following properties:
-    "id": [NUMBER, new map ID],
-    "name": <Name of the map>,
-    "creator": "Raven Software",
-    "portedBy": 32,
-    "image": "jka_map_pack.png",
-    "source": "https://vertex.mod.io/?filter=t&kw=jk+map+pack&tag%5B%5D=Map"
+    - "id": [Number, new map ID],
+    - "name": [String],
+    - "creator": [String],
+    - "portedBy": [Number, play id from players.json],
+    - "image": [String, filename of the thumbnail in public/img],
+    - "source": [String, URL to download location, i.e. vertex.mod.io]
