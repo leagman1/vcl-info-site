@@ -2,9 +2,8 @@
 
 ## Description
 vcl-info-site is a website project to consolidate most of the data on the Vertex Control League seasons in one easily navigatable place.
-The reason to have this website is to improve on how scattered information in the VCL discord is, to pretify the data and to make available data that wasn't really available in the discord.
 
-Since it's a private project and everybody be working day jobs, it is meant to be limited in a few ways to cut down on time and effort:
+Since it's a hobby project and everybody is working day jobs, it is meant to be limited in a few ways to cut down on time and effort:
 - the site is designed on and for 1080p 16:9 computer monitors only
 - all data is read only
 - no player accounts
