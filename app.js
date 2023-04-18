@@ -1,21 +1,22 @@
 const express = require('express');
 const app = express();
-const port = 45700;
+const port = 8085;
 
 process.title = "vcl_info_site";
 
-const path = require("path");
+// const path = require("path");
 const favicon = require('serve-favicon');
 
-const getSeasonData = require(path.join(__dirname, "js", "seasonData.js"));
+const getSeasonData = require("./js/seasonData.js");
 
 const fs = require("fs");
 
-app.set("views", path.join(__dirname, "views"));
+app.set("views", "views");
 app.set('view engine', 'pug');
 
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(favicon(path.join(__dirname, 'public', 'img', 'favicon', 'favicon.ico')))
+// static via nginx
+// app.use(express.static('public'));
+// app.use(favicon('public/favicon.ico'));
 
 app.get('/', (req, res) => {
   res.redirect("/standings?season=1");
@@ -32,7 +33,7 @@ app.get("*", (req,res) => render404(req, res));
 
 function renderPage(req, res){
   try {
-    var getMatchData = require(path.join(__dirname, "js", "matchData.js"));
+    var getMatchData = require("./js/matchData.js");
     var seasonData = getSeasonData(req.query.season);
 
     if(seasonData.matches){
@@ -52,7 +53,7 @@ function renderPage(req, res){
           console.log("RENDER ERROR", err);
           res.render("error", {error: err});
         } else {
-          res.send(html);
+          res.end(html);
         }
       }
     );
@@ -73,7 +74,7 @@ function renderMatchPage(req, res){
     matchID = matchID % seasonData.matches[0].length;
 
     // get match data
-    var matchDataFound = require(path.join(__dirname, "js", "matchData.js"))(seasonData, matchID, weekID);
+    var matchDataFound = require("./js/matchData.js")(seasonData, matchID, weekID);
 
     res.render(req.path.substring(1), {
       seasonData: seasonData,
@@ -85,7 +86,7 @@ function renderMatchPage(req, res){
           console.log("RENDER ERROR", err);
           res.render("error", {error: err});
         } else {
-          res.send(html);
+          res.end(html);
         }
       }
     );
@@ -100,8 +101,6 @@ function renderInfoPage(req, res){
   try {
     var seasonData = getSeasonData(req.query.season);
 
-    console.log("season Info", seasonData.selectedSeason.info);
-
     res.render(req.path.substring(1),{
       seasonData: seasonData,
       seasonInfo: seasonData.selectedSeason.info
@@ -114,7 +113,7 @@ function renderInfoPage(req, res){
 
 function renderStandingsPage(req, res){
   try {
-    let getMatchData = require(path.join(__dirname, "js", "matchData.js"));
+    let getMatchData = require("./js/matchData.js");
 
     let seasonData = getSeasonData(req.query.season);
 
@@ -127,7 +126,7 @@ function renderStandingsPage(req, res){
             console.log("RENDER ERROR", err);
             res.render("error", {error: err});
           } else {
-            res.send(html);
+            res.end(html);
           }
         }
       );
@@ -225,7 +224,7 @@ function renderStandingsPage(req, res){
           console.log("RENDER ERROR", err);
           res.render("error", {error: err});
         } else {
-          res.send(html);
+          res.end(html);
         }
       }
     );
@@ -243,7 +242,7 @@ function render404(req, res){
           console.log("RENDER ERROR", err);
           res.render("error", {error: err});
         } else {
-          res.send(html);
+          res.end(html);
         }
       }
     );
